@@ -1,5 +1,5 @@
 Package: SeaSlugSpectra
-Title: SeaSlugSpectra: Bioinspired Colour Palettes from Nudibranchs
+Title: SeaSlugSpectra: Bio-inspired Colour Palettes from Nudibranchs
 Version: 0.0.0.9000
 Authors@R: 
     person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
