@@ -1,26 +1,175 @@
-[
-  {
-    "species_name": "Chromodoris willani",
-    "image_filename": "Chromodoris_willani.jpg",
-    "common_name": "Willan's chromodoris",
-    "location": "Lembeh Strait, Indonesia",
-    "depth_m": 15,
-    "habitat": "",
-    "size_mm": 45,
+{
+  "Glaucus_atlanticus": {
+    "common_name": "Blue dragon, sea swallow, blue sea slug",
+    "location_distribution": "Pelagic zone (open ocean), carried by winds and currents; primarily tropical and subtropical areas. Documented sightings include Bay of Bengal, off Tamil Nadu and Andhra Pradesh in India. Populations are localized within distinct ocean basins.",
+    "depth": "Surface (neustonic, floats upside-down).",
+    "habitat": "Open ocean surface.",
+    "size_mm": "30",
     "taxonomy": {
-      "family": "Chromodorididae",
-      "order": "Nudibranchia"
+      "domain": "Eukaryota",
+      "kingdom": "Animalia",
+      "phylum": "Mollusca",
+      "class": "Gastropoda",
+      "order": "Nudibranchia",
+      "suborder": "Cladobranchia",
+      "family": "Glaucidae",
+      "genus": "Glaucus",
+      "species": "G. atlanticus",
+      "binomial_name": "Glaucus atlanticus Forster, 1777",
+      "synonyms": [
+        "Glaucus marginatus",
+        "Glaucus marginatus Forster, 1777",
+        "Glaucus atlanticus Forster, 1777"
+      ]
     },
-    "diet": "",
-    "interesting_facts": "",
-    "color_notes": "",
-    "extraction_parameters": {
-      "n_colors": 5,
-      "method": "kmeans",
-      "color_space": "RGB",
-      "resize": false,
-      "sample_fraction": 1.0,
-      "seed": 42
-    }
+    "diet": "Cnidarians, including venomous siphonophores like the Portuguese man o' war. Uses a radula with serrated teeth, strong jaw, and denticles to grasp and chip prey.",
+    "interesting_facts": "Glaucus atlanticus is a pelagic sea slug that floats on the ocean surface, feeding on jellyfish and other cnidarians. It has a unique ability to store the stinging cells (nematocysts) of its prey in its own tissues",
+    "color_notes": "Ventral side (upwards) is dark and pale blue; true dorsal surface (downwards) is silvery grey. Features dark blue stripes on its head. Dorsal area of foot varies from dark blue to brown with a silver central position."
+  },
+
+  "Berghia_coerulescens": {
+    "common_name": "Berghia nudibranch",
+    "location_distribution": "Eastern Atlantic Ocean and Mediterranean Sea. Originally from French Mediterranean coast, found in central and western Mediterranean (including Adriatic Sea), and Atlantic coasts from Brittany to Canary Islands.",
+    "depth": "Shallow waters, benthic zone (prey habitat).",
+    "habitat": "Marine, shallow waters, typically under rocks and corals.",
+    "size_mm": "40-70",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Animalia",
+      "phylum": "Mollusca",
+      "class": "Gastropoda",
+      "order": "Nudibranchia",
+      "suborder": "Cladobranchia",
+      "family": "Aeolidiidae",
+      "genus": "Berghia",
+      "species": "B. coerulescens",
+      "binomial_name": "Berghia coerulescens (Laurillard, 1830)",
+      "synonyms": "Berghia coerulescens (Laurillard, 1830), Berghia coerulea (Alder & Hancock, 1844)"
+    },
+    "diet": "Strictly Aiptasia anemones. Can obtain short-term sustenance from zooxanthellae from prey.",
+    "interesting_facts": "Berghia coerulescens is a popular subject in marine aquariums. It has a specialized diet, primarily feeding on Aiptasia anemones, which makes it a valuable species for controlling these pests in reef tanks.",
+    "color_notes": "Body is white, cerata are light blue with yellow tips. May have orange marks on the head between rhinophores and oral tentacles. Rhinophore clubs are orange-brown. Pigmentation develops from consuming anemones, harvesting color from food."
+  },
+
+  "Costasiella_kuroshimae": {
+    "common_name": "Kuroshima slug",
+    "location_distribution": "Indo-Pacific, including waters near Japan (Kuroshima, Okinawa), the Philippines, Indonesia, Northern Mariana Islands (Saipan), and Australia (Heron Island, Great Barrier Reef).",
+    "depth": "1.5 m; also found in intertidal zones at low tide.",
+    "habitat": "Tropical climates, marine; often associated with leaf-like green algae (Avrainvillea genus) on sandy bottoms between reefs, and eelgrass beds.",
+    "size_mm": "5-10",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Animalia",
+      "phylum": "Mollusca",
+      "class": "Gastropoda",
+      "infraclass": "Euthyneura",
+      "superorder": "Sacoglossa",
+      "superfamily": "Plakobranchoidea",
+      "family": "Costasiellidae",
+      "genus": "Costasiella",
+      "species": "C. kuroshimae",
+      "binomial_name": "Costasiella kuroshimae Ichikawa, 1993",
+      "synonyms": [
+        "Costasiella kuroshimae Ichikawa, 1993"
+      ]
+    },
+    "diet": "Selective feeder, exclusively consuming algae from the genus Avrainvillea.",
+    "interesting_facts": "Costasiella kuroshimae is known for its unique appearance and behavior. It is often found on the underside of leaves and is capable of photosynthesis due to the presence of chloroplasts from the algae it consumes.",
+    "color_notes": "Background color is cream with white patches. White head with dark midline marks and a dark streak in front of rhinophores; may have dark grey-black streak behind eyes. Rhinophores are white with black tips. Cerata are generally green with white tips and iridescent bright blue spots. Some specimens have orange rings or spots on cerata. Coloration can vary based on feeding status, with green color derived from digestive gland contents (chloroplasts)."
+  },
+
+  "Chromodoris_willani": {
+    "common_name": "Willan's chromodorid",
+    "location_distribution": "Western Pacific Ocean, from Indonesia and the Philippines to Vanuatu.",
+    "depth": "Not specified in available information.",
+    "habitat": "Marine, likely reef communities.",
+    "size_mm": "20-30",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Animalia",
+      "phylum": "Mollusca",
+      "class": "Gastropoda",
+      "order": "Nudibranchia",
+      "family": "Chromodorididae",
+      "genus": "Chromodoris",
+      "species": "C. willani",
+      "binomial_name": "Chromodoris willani Rudman, 1982",
+      "synonyms": "Chromodoris willani Rudman, 1982"
+    },
+    "diet": "Sponges, specifically Cacospongia mycofijiensis and Semitaspongia (family Thorectidae).",
+    "interesting_facts": "Chromodoris willani is known for its vibrant coloration and is often found in shallow reef environments.",
+    "color_notes": "Ranges from dark blue to translucent white. Features black stripes, with the center-most stripe typically non-continuous. Distinguished by prominent white specks on gills and rhinophores. Observed color forms include pale blue, white, blue, and browny."
+  },
+
+  "Phidiana_militaris": {
+    "common_name": "Military nudibranch",
+    "location_distribution": "Indo-Pacific (tropical and subtropical), including India (original description), Oman, New Zealand, Hong Kong, Thailand, Borneo, Philippines, Australia, and Japan. Also found in Mediterranean Sea as a Lessepsian migrant via Suez Canal (e.g., Haifa Bay, Israel).",
+    "depth": "15-22 m; also in shallow rockpools",
+    "habitat": "Marine, shallow coastal waters, often associated with coral reefs, rocky substrates, hydroids, and Sargassum sp.",
+    "size_mm": "18-35",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Animalia",
+      "phylum": "Mollusca",
+      "class": "Gastropoda",
+      "order": "Nudibranchia",
+      "suborder": "Cladobranchia",
+      "family": "Facelinidae",
+      "genus": "Phidiana",
+      "species": "P. militaris",
+      "binomial_name": "Phidiana militaris (Alder & Hancock, 1864)",
+      "synonyms": "Berghia coerulescens (Laurillard, 1830), Berghia coerulea (Alder & Hancock, 1844)"
+    },
+    "diet": "Carnivorous, preying on small invertebrates such as polyps, hydroids, and other soft-bodied organisms.",
+    "interesting_facts": "Phidiana militaris is known for its striking coloration and is often found in association with hydroids.",
+    "color_notes": "Body typically brown or reddish-brown. Features a bright orange median line on the head that forks anteriorly, extending up each oral tentacle. Another orange line runs along the posterior edge of oral tentacles and along each side of the body below the cerata. Oral tentacles, rhinophores, tentacular foot corners, and cerata are tipped with yellow. Rhinophores have a broad orange band. Possesses a very striking color pattern."
+  },
+
+  "Felimare_cantabrica": {
+    "common_name": "Cantabrian chromodorid",
+    "location_distribution": "Eastern Atlantic Ocean, specifically Bay of Biscay and Atlantic coasts of Spain and Portugal. Also restricted to the Mediterranean Sea.",
+    "depth": "Not specified in available information.",
+    "habitat": "Marine, rocky reefs.",
+    "size_mm": "40",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Animalia",
+      "phylum": "Mollusca",
+      "class": "Gastropoda",
+      "order": "Nudibranchia",
+      "family": "Chromodorididae",
+      "genus": "Felimare",
+      "species": "F. cantabrica",
+      "binomial_name": "Felimare cantabrica (Bouchet & Ortea, 1980)",
+      "synonyms": "Berghia coerulescens (Laurillard, 1830), Berghia coerulea (Alder & Hancock, 1844)"
+    },
+    "diet": "Sponges, specifically from the genus Dysidea. Characterized as a foraging predator.",
+    "interesting_facts": "Felimare cantabrica is found in rocky reef habitats.",
+    "color_notes": "Light and dark blue body, flecked with yellow lines and spots. Mantle edge lined with yellow-light blue-yellow banding. Gills and rhinophores are purple."
+  },
+
+  "Nembrotha_cristata": {
+    "common_name": "Crested nembrotha",
+    "location_distribution": "Tropical Indo-West Pacific Ocean, including the Philippines (original description), Indonesia, and Malaysia (Tioman).",
+    "depth": "3-20 m.",
+    "habitat": "Marine, coral or rock reefs.",
+    "size_mm": "50",
+    "taxonomy": {
+      "domain": "Eukaryota",
+      "kingdom": "Animalia",
+      "phylum": "Mollusca",
+      "class": "Gastropoda",
+      "order": "Nudibranchia",
+      "superfamily": "Polyceroidea",
+      "family": "Polyceridae",
+      "subfamily": "Nembrothinae",
+      "genus": "Nembrotha",
+      "species": "N. cristata",
+      "binomial_name": "Nembrotha cristata Bergh, 1877",
+      "synonyms": "Nembrotha cristata Bergh, 1877"
+    },
+    "diet": "Compound tunicates, specifically green compound ascidians like Eudistoma olivaceum or Sigillina signifera.",
+    "interesting_facts": "Nembrotha cristata is known for its striking appearance and is often found in shallow coral reef habitats. It has a unique feeding behavior, primarily consuming compound tunicates.",
+    "color_notes": "Black body with raised green nodules. Rhinophores and gills are black-edged in green. Foot border is green."
   }
-]
+}
