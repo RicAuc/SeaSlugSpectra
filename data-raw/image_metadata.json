@@ -650,11 +650,219 @@
     "extraction_parameters": {
       "n_colors": 5,
       "method": "kmeans",
-      "color_space": "RGB",
-      "resize": false,
+       "resize": false,
       "sample_fraction": 1.0,
       "seed": 42
     }
+  },
+    "Felimare_picta": {
+    "species_name": "Felimare picta",
+    "common_name": "Regal Sea Goddess",
+    "location": "Mediterranean Sea, European Atlantic (e.g., Portugal, Spain, British Isles), Gulf of Mexico, Eastern North Atlantic (Amphi-Atlantic distribution).",
+    "depth_m": "0-55",
+    "habitat": "Rocky seabeds, tide pools, shallow sheltered areas, on rocky substrates.",
+    "size_mm": 130,
+    "taxonomy": {
+      "family": "Chromodorididae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Sponges, specifically species from the genus Dysidea.",
+    "interesting_facts": "This species is notable for its large size, often exceeding 10 cm. It displays striking dark blue or purplish coloration with yellow or orange lines and spots. As a defensive mechanism, it sequesters noxious chemicals from the sponges it consumes, making it unpalatable to predators. It has a relatively longer planktonic larval phase which aids in its wide dispersal across the Atlantic.",
+    "color_notes": "Highly variable, but generally dark blue/purple with bright yellow/orange markings. Some variations include white and black. Possesses an external crown-like gill plume and prominent rhinophores."
+  },
+  "Janolus_savinkini": {
+    "species_name": "Janolus savinkini",
+    "common_name": "Purple-tipped Janolus, Savinkin's Janolus",
+    "location": "Indo-Pacific region, including East Asian waters such as Indonesia, Japan (Okinawa), Papua New Guinea, Philippines, and Tanzania.",
+    "depth_m": "15-200",
+    "habitat": "Subtidal marine environments, often associated with its bryozoan prey.",
+    "size_mm": 40,
+    "taxonomy": {
+      "family": "Janolidae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Bryozoans (sea mats).",
+    "interesting_facts": "A specialist carnivore feeding exclusively on bryozoans. It is characterized by its yellowish body with light orange hues and numerous cerata, each featuring a broad purplish subterminal ring and a distinctive bright opaque blue spot at the tip. Specific defensive mechanisms are not explicitly detailed, but as an aeolid nudibranch, it likely produces or sequesters defensive compounds.",
+    "color_notes": "Yellowish body with orange tones, cerata with purple subterminal rings and bright opaque blue spots at the tips. Possesses large, papillate rhinophores."
+  },
+  "Goniobranchus_geminus": {
+    "species_name": "Goniobranchus geminus",
+    "common_name": "Gem Sea Slug",
+    "location": "Indian Ocean (from East African coast to Sri Lanka) and the Red Sea.",
+    "depth_m": "0-50",
+    "habitat": "External slopes of coral reefs.",
+    "size_mm": 50,
+    "taxonomy": {
+      "family": "Chromodorididae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Sponges (spongivore).",
+    "interesting_facts": "Known for its distinctive mantle edge with four concentric colored lines (white, grayish, white, golden yellow) and mauve ocelli on its body. As a chromodorid, it employs chemical defenses by sequestering toxic compounds from its sponge diet, which are advertised by its striking aposematic coloration.",
+    "color_notes": "Light brown or yellowish body with mauve ocelli. Mantle edge has four distinct lines: outermost white, then grayish, then white, then golden yellow. Yellow or purple laminated rhinophores and white gills with a beige outline."
+  },
+  "Polycera_quadrilineata": {
+    "species_name": "Polycera quadrilineata",
+    "common_name": "Fourline Nudibranch",
+    "location": "Widespread in the Northeast Atlantic (Greenland, Norway, European coasts, Mediterranean Sea) and also recorded from the South African coast (part of a cryptic species complex).",
+    "depth_m": "0-300",
+    "habitat": "Shallow water environments, often associated with kelp and red algae where its bryozoan prey is found.",
+    "size_mm": 45,
+    "taxonomy": {
+      "family": "Polyceridae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Bryozoans, particularly Membranipora membranacea and Electra pilosa.",
+    "interesting_facts": "This species exhibits aposematic coloration and possesses defensive spicules embedded in its body wall, especially concentrated around the visceral mass in juveniles, providing a form of 'armor'. Its specific diet on bryozoans influences its distribution. Reproduction involves short, curved egg ribbons and planktotrophic larvae.",
+    "color_notes": "Translucent white or grey body marked with distinctive yellow, orange, or black longitudinal stripes. Possesses 4-6 prominent oral veil processes and usually 4-6 processes near the gills, often tipped with orange or yellow. Rhinophores and gills are typically translucent white with yellow tips."
+  },
+  "Fjordia_lineata": {
+    "species_name": "Fjordia lineata",
+    "common_name": "Sea Slug (No widely accepted specific common name beyond 'aeolid nudibranch')",
+    "location": "Northeast Atlantic, including the British Isles, Norway, and the Mediterranean Sea.",
+    "depth_m": "0-NA",
+    "habitat": "Rocky substrates, often found on or near its hydroid prey.",
+    "size_mm": 30,
+    "taxonomy": {
+      "family": "Flabellinidae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Hydroids, specifically known to consume Tubularia indivisa.",
+    "interesting_facts": "As an aeolid nudibranch, it is highly likely to sequester undischarged nematocysts (stinging cells) from the hydroids it consumes and relocate them to the tips of its cerata for defense. Its elongated body is typically brown or yellowish with distinctive longitudinal lines.",
+    "color_notes": "Body typically brown or yellowish with distinctive longitudinal lines or stripes. Numerous cerata covering its back are lined with bright yellow or orange pigment."
+  },
+  "Hermissenda_crassicornis": {
+    "species_name": "Hermissenda crassicornis",
+    "common_name": "Horned Aeolid, Hermissenda",
+    "location": "Widespread along the Pacific coast of North America (from Sitka, Alaska, to Baja California) and also found in the Arctic Ocean.",
+    "depth_m": "0-35",
+    "habitat": "Diverse habitats including rocky pools, marina floats, pilings, and mud flats.",
+    "size_mm": 82.5,
+    "taxonomy": {
+      "family": "Facelinidae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Highly carnivorous and opportunistic, feeding on hydroids, small sea anemones, bryozoans, worms, small crustaceans, tiny clams, and dead animals. Known for ingesting and utilizing nematocysts from cnidarian prey.",
+    "interesting_facts": "A key defensive mechanism is the sequestration of undischarged nematocysts from its cnidarian prey, which are then deployed from the tips of its cerata. It is an important predator in its ecosystem due to its broad diet. Its lifespan can range from a few weeks to about a year.",
+    "color_notes": "Distinctive bright orange and bluish-white longitudinal stripes running along its body. Possesses two pairs of prominent rhinophores and numerous iridescent cerata covering its back."
+  },
+  "Ceratosoma_tenue": {
+    "species_name": "Ceratosoma tenue",
+    "common_name": "Colourful Dorid Nudibranch, Elongate Pantechnicon Dorid, Kangaroo Nudibranch",
+    "location": "Widespread throughout the Indo-Pacific region, from the Oriental African coast eastward to Hawaii, and across Southeast Asia and tropical Australia.",
+    "depth_m": "0.5-40",
+    "habitat": "Diverse marine environments, commonly found among shallow coral reefs, moderately exposed to exposed rocky habitats.",
+    "size_mm": 120,
+    "taxonomy": {
+      "family": "Chromodorididae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Sponges, particularly species from the genus Dysidea.",
+    "interesting_facts": "This species exhibits remarkably variable and bright coloration, making each individual almost unique. It possesses a prominent, curved 'horn' at its posterior end which contains defensive glands that release noxious chemicals. This 'horn' may also serve as a lure. It is a specialized predator of sponges and can host commensal shrimp.",
+    "color_notes": "Highly variable and bright coloration, ranging from pinky-orange with yellow spots to olive-green or even violet margins. Has three distinct mantle lobes. Both its gills and rhinophores are fully retractile."
+  },
+  "Felimare_californiensis": {
+    "species_name": "Felimare californiensis",
+    "common_name": "California blue dorid, California nudibranch",
+    "location": "Eastern Pacific Ocean, Californian coast (Monterey Bay through Baja California). Experienced regional extinction in northern range around 1982, reappeared in 2003.",
+    "depth_m": "Intertidal to subtidal, near sponges",
+    "habitat": "Rocky intertidal zones and subtidal habitats, preferring areas with abundant food supply and suitable surfaces to cling to, typically covered in sponges.",
+    "size_mm": 90,
+    "taxonomy": {
+      "family": "Chromodorididae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Dysideid sponges.",
+    "interesting_facts": "Vibrant blue, yellow, and white hues serve as aposematic (warning) coloration. It is hermaphroditic and lays spiral, ribbon-like egg masses. Known for its slow-moving lifestyle and unpalatability.",
+    "color_notes": "Vibrant blue body with yellow and white markings. Often has orange or yellow lines along the mantle edge and on the rhinophores and gills."
+  },
+  "Tambja_verconis": {
+    "species_name": "Tambja verconis",
+    "common_name": "Verco's Nudibranch",
+    "location": "New Zealand and southern Australia.",
+    "depth_m": "0-50",
+    "habitat": "Rocky reefs, pier piles, sponge gardens, typically found on or near its host bryozoan.",
+    "size_mm": 120,
+    "taxonomy": {
+      "family": "Polyceridae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Bugula dentata (a specific dark blue-green bryozoan).",
+    "interesting_facts": "A large nudibranch with striking coloration, often exhibiting iridescent qualities. It is a highly specialized feeder. Lays bright yellow spiral coil of eggs.",
+    "color_notes": "Striking color patterns of yellow and/or blue, often with electric blue lines or spots. Rhinophores and gills are typically the same vibrant colors as the body."
+  },
+  "Hypselodoris_decorata": {
+    "species_name": "Hypselodoris decorata",
+    "common_name": "Spotted Hypselodoris",
+    "location": "Indo-Pacific: New Caledonia, Marshall Islands, Vanuatu, Indonesia, Papua New Guinea, Philippines, Malaysia.",
+    "depth_m": "5-40",
+    "habitat": "Subtidal, sublittoral, infralittoral, and deep zone; commonly found on coral reefs, rocky reefs, and seaward-facing reefs.",
+    "size_mm": 25,
+    "taxonomy": {
+      "family": "Chromodorididae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Sponges (food specialist).",
+    "interesting_facts": "Its distinct coloration includes complex patterns of lines and spots. Not generally suitable for aquarium keeping. Its potential toxic hazard is unknown.",
+    "color_notes": "Translucent cream to pink body with a brown longitudinal band, intricate white lines, and distinct red or purple spots. Anterior end often light-purple. Gills with red-orange pigment; rhinophores white with red bands."
+  },
+  "Hypselodoris_infucata": {
+    "species_name": "Hypselodoris infucata",
+    "common_name": "Painted nudibranch",
+    "location": "Red Sea and western Indian Ocean eastwards to Hawaiian islands, tropical Indo-West Pacific. Also reported as a Lessepsian migrant in the Mediterranean Sea.",
+    "depth_m": "Infralittoral zone",
+    "habitat": "Rocky bottoms of the infralittoral zone, showing tolerance to harbor conditions.",
+    "size_mm": 50,
+    "taxonomy": {
+      "family": "Chromodorididae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Sponges.",
+    "interesting_facts": "Reproduction and larval development have been studied, showing veliger larvae hatch after about 5 days with a planktonic life of about 3 weeks. Distinguished from similar species by its gill structure.",
+    "color_notes": "Translucent white body with grey-blue blotches, large yellow spots, and small black spots. Gills white with red pigment; rhinophores opaque white with red edges or a red line."
+  },
+  "Tambja_blacki": {
+    "species_name": "Tambja blacki",
+    "common_name": "No widely recognized common name",
+    "location": "Generally recorded from the Great Barrier Reef (Australia), Papua New Guinea, with recent findings in Indonesia.",
+    "depth_m": "Not explicitly stated, associated with reef environments",
+    "habitat": "Likely associated with reefs where its specific bryozoan diet is abundant.",
+    "size_mm": "Not explicitly stated (but noted as 'large size')",
+    "taxonomy": {
+      "family": "Polyceridae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Believed to feed upon the arborescent bryozoan Amastigia rudis.",
+    "interesting_facts": "Notable for its large size and distinctive patterning. Uniquely, it is known to swim readily by strong side-to-side flexions of its body when irritated. Rhinophores can fold posteriorly and gills contract for streamlining during swimming.",
+    "color_notes": "Distinctive patterning and coloration (specific details vary, but generally dark body with bright contrasting markings)."
+  },
+  "Hypselodoris_obscura": {
+    "species_name": "Hypselodoris obscura",
+    "common_name": "No widely recognized common name",
+    "location": "Southeastern Australia (warm temperate species).",
+    "depth_m": "Not explicitly stated, likely consistent with rocky reefs",
+    "habitat": "Likely rocky reefs within its distributional range, consistent with its sponge diet.",
+    "size_mm": 60,
+    "taxonomy": {
+      "family": "Chromodorididae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Sponges.",
+    "interesting_facts": "Its mottled appearance provides camouflage against certain backgrounds. Closely related to other Hypselodoris species like H. infucata and H. saintvincentius. Observed as infrequent and solitary.",
+    "color_notes": "Mottled appearance with a grey or grey-blue background adorned with yellow and black spots. Often has a paler midline stripe. Mantle edge shows alternating pale blue and yellow. Gills and rhinophores are bright red."
+  },
+  "Chromodoris_magnifica": {
+    "species_name": "Chromodoris magnifica",
+    "common_name": "Magnificent sea slug",
+    "location": "Central Indo-Pacific region, including Indonesia, Philippines, New Guinea, Eastern Australia (Queensland), and Okinawa (Japan).",
+    "depth_m": "5-30",
+    "habitat": "Coral reefs.",
+    "size_mm": 90,
+    "taxonomy": {
+      "family": "Chromodorididae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Sponges, specifically Negombata sp. (Podospongiidae) and possibly Lamellodysidea. Obtains toxic compounds (e.g., Latrunculin A) from diet.",
+    "interesting_facts": "Living up to its name, this species is incredibly vibrant and displays strong aposematic (warning) coloration. It is involved in Müllerian mimicry with other similarly colored species. Lays eggs in a distinctive planar (flat) ribbon mass.",
+    "color_notes": "Bluish-white body with two prominent continuous black longitudinal lines, a median continuous line, and a white mantle margin bordered by an orange line. Gills and rhinophores are bright orange and are retractible."
   }
 }
-

@@ -3,22 +3,26 @@
 
 ## Introduction
 
-Nudibranchs, commonly referred to as *sea slugs* or poetically as *butterflies of the sea*, constitute a diverse order of marine gastropod molluscs, comprising over 4,700 described species. A key distinguishing characteristic of these invertebrates is the evolutionary loss of the shell during the adult stage (an adaptation that sets them apart from most other gastropods).
+Nudibranchs, commonly referred to as *sea slugs* or poetically as *butterflies of the sea*, constitute a diverse order of marine gastropod molluscs, comprising over 4,700 described species. 
+
+A key distinguishing characteristic of these invertebrates is the evolutionary loss of the shell during the adult stage (an adaptation that sets them apart from most other gastropods).
+
+This transition from a shelled to a shell-less condition has catalysed a striking diversification in body shape and pigmentation patterns.
 
 ## Morphology and Terminology
 
-Nudibranchs are a type of sea slug. Similar to terrestrial slugs in locomotion, they glide along substrates underwater. The term *nudibranch* translates to “naked gills”, referencing the external gill structures located on the dorsum. 
+Similar to terrestrial slugs in locomotion, they glide along substrates underwater. The term *nudibranch* translates to “naked gills”, referencing the external gill structures located on the dorsum. 
 
 - In **dorid nudibranchs**, these gills appear as rosette-like plumes situated towards the posterior end.
 - In **aeolid nudibranchs**, the gills are organised into numerous spike-like structures called cerata, which also serve additional defensive functions in some species.
 
-This transition from a shelled to a shell-less condition has catalysed a striking diversification in body shape and pigmentation patterns.
-
 ## Feeding Ecology
 
-Nudibranchs are predominantly carnivorous and occupy a critical trophic position within benthic marine communities. Their diet consists primarily of sessile invertebrates, including: Sponges, Cnidarians (e.g., corals, anemones), Tunicates and Bryozoans  
+Nudibranchs are predominantly carnivorous and occupy a critical trophic position within benthic marine communities. 
 
 Feeding is often highly specialised, with many species exhibiting narrow dietary preferences.
+
+Their diet consists primarily of sessile invertebrates, including: Sponges, Cnidarians (e.g., corals, anemones), Tunicates and Bryozoans.
 
 ## Defensive Adaptations
 
@@ -41,15 +45,15 @@ The evolutionary shift from a shelled to a shell-less morphology, combined with 
 
 ## Nudibranch Facts
 
-Nudibranchs are a remarkably diverse group of marine gastropods, with around **3,000 described species** inhabiting oceans worldwide, from sunlit tropical reefs to the deep sea at depths exceeding 700 m. Their sizes vary dramatically, from just a few millimetres to upwards of **30 cm**, and while most live for **a few weeks to about a year**, larger species or those in cooler environments may survive longer.
+Nudibranchs are a remarkably diverse group of marine gastropods, inhabiting oceans worldwide, from sunlit tropical reefs to the deep sea at depths exceeding 700 m. Their sizes vary dramatically, from just a few millimetres to upwards of 30 cm, and while most live for a few weeks to about a year, larger species or those in cooler environments may survive longer.
 
-Uniquely adapted, nudibranchs are obligate carnivores They feed using a **radula**, a toothed, ribbon-like organ that rasps or pierces prey tissues. Aeolid nudibranchs often retain nematocysts within their cerata, deploying them defensively when threatened.
+Uniquely adapted, nudibranchs are obligate carnivores They feed using a *radula*, a toothed, ribbon-like organ that rasps or pierces prey tissues.
 
 Some species are bioluminescent, notably *Bathydevius* found in deep-sea environments, and others emit distinctive odours—for instance, *Melibe leonina* has a watermelon-like scent, *Acanthodoris lutea* cedar, and *Peltodoris nobilis* citrus—which may serve communication or deterrent functions.
 
-Reproductively, nudibranchs are **simultaneous hermaphrodites**. They engage in reciprocal mating and subsequently lay eggs in spiral or ribbon-like masses. Hägglings later hatch into veliger larvae bearing rudimentary shells, though in some lineages this stage is entirely bypassed.
+Reproductively, nudibranchs are *simultaneous hermaphrodites*. They engage in reciprocal mating and subsequently lay eggs in spiral or ribbon-like masses. Hägglings later hatch into veliger larvae bearing rudimentary shells, though in some lineages this stage is entirely bypassed.
 
-Finally, certain nudibranchs engage in **kleptoplasty**: they sequester intact chloroplasts from algae (or zooxanthellae), which remain photosynthetically active within the cerata, supplementing the animal’s energy through light capture.
+Finally, certain nudibranchs engage in *kleptoplasty*: they sequester intact chloroplasts from algae (or zooxanthellae), which remain photosynthetically active within the cerata, supplementing the animal’s energy through light capture.
 
 ## Two Types of Nudibranchs
 
@@ -61,7 +65,7 @@ Dorid nudibranchs look fairly smooth, like typical land slugs. There is a tuft o
 
 ### Aeolid Nudibranchs
 
-Aeolid nudibranchs are covered in spikes along their backs called cerata, which are the animal’s gills. The cerata have an added feature - many aeolid nudibranchs ingest stinging cells from their prey and store them in their cerata for later use.
+Aeolid nudibranchs are covered in spikes along their backs called cerata, which are the animal’s gills. The cerata have an added feature, many aeolid nudibranchs ingest stinging cells from their prey and store them in their cerata for later use.
 
 ## Nudibranch Anatomy
 
@@ -72,30 +76,6 @@ Aeolid nudibranchs are covered in spikes along their backs called cerata, which 
 - **Eye Spots**: Nudibranchs do have eyes, but scientists believe these rudimentary organs can only discern the difference between light and dark.
 - **Mantle**: In dorid nudibranchs, the mantle extends over the foot, offering some protection to the creatures.
 - **Oral Tentacles**: The oral tentacles are used for identifying food by touch and taste.
-
----
-
-## Example Species
-
-### Blue Dragon (*Glaucus atlanticus*)
-
-- **Size**: Up to 3 centimeters long  
-- **Diet**: Portuguese man o’ war and blue button jellyfish  
-- **Habitat**: Atlantic, Pacific, and Indian Oceans  
-- **Interesting facts**: The blue dragon lives its entire life floating on the open ocean. It often floats upside, showing its bright blue markings to airborne predators.
-
-### Blue Skies Nudibranch (*Berghia coerulescens*)
-
-- **Size**: 40-70 millimeters in length  
-- **Diet**: Anemones  
-- **Habitat**: Atlantic coast of Europe and the Western Mediterranean
-
-### Leaf Sheep (*Costasiella kuroshimae*)
-
-- **Size**: 5 millimeters to 1 centimeter in length  
-- **Diet**: Algae  
-- **Habitat**: Waters near Japan, the Philippines, and Indonesia  
-- **Interesting facts**: The leaf sheep isn’t actually a nudibranch; it’s a sacoglossan sea slug. Leaf sheep can store algae in their cerata and gain energy through photosynthesis.
 
 ---
 
@@ -149,6 +129,8 @@ Aeolid nudibranchs are covered in spikes along their backs called cerata, which 
 ## Web References
 
 1. [iNaturalist](https://www.inaturalist.org/)
+2. [WoRMS](https://www.marinespecies.org/)
+2. [Sea Slug Forum](http://www.seaslugforum.net/)
 
 ## Bibliographic References
 

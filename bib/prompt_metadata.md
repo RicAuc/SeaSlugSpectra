@@ -5,7 +5,7 @@ I am developing an R package called `SeaSlugSpectra` that generates biologically
 
 I have a list of **42 species** (scientific names in `Genus_species` format) and a corresponding `image_metadata.json` file that needs to be filled with biologically accurate metadata.
 
-Please help complete the following 9 metadata fields for each species. The JSON structure will be programmatically integrated into my R project. **Please return the results in structured JSON format** matching the schema below.
+Help complete the following metadata fields for each species. The JSON structure will be programmatically integrated into the library project. Please return the results in structured JSON format matching the schema below.
 
 ---
 
@@ -14,8 +14,7 @@ Please help complete the following 9 metadata fields for each species. The JSON 
 1. `common_name`: Widely recognised English name (if one exists)  
 2. `location`: General region or known collection area  
 3. `depth_m`: Typical observed depth range (mean or range preferred, in metres)  
-4. `habitat`: Type of benthic environment (e.g., coral reef, seagrass, sandy bottom)  
-
+4. `habitat`: Type of benthic environment (e.g., coral reef, seagrass, sandy bottom)
 5. `size_mm`: Average or maximum adult body size in millimetres  
 6. `taxonomy`: Structured object with:
 
@@ -148,38 +147,18 @@ Ceratosoma_tenue
 ### Group 6
 
 ```
-
 Felimare_californiensis
-
 Tambja_verconis
-
 Hypselodoris_decorata
-
 Hypselodoris_infucata
-
 Tambja_blacki
-
 Hypselodoris_obscura
-
 Chromodoris_magnifica
-
 ```
 
 ---
 
-Please ensure each JSON block includes all required fields, formatted for structured ingestion. Let's start with the fourth group
-
-```
-Hypselodoris_tryoni
-Hypselodoris_variobranchia
-Bornella_anguilla
-Phyllidia_ocellata
-Glossodoris_cincta
-Mexichromis_macropus
-Aegires_villosus
-```
-
-I already complete the task for the first (second and third) group, You can use that as example:
+Please ensure each JSON block includes all required fields, formatted for structured ingestion. You can use that as example:
 
 ```
   "Hexabranchus_sanguineus": {
