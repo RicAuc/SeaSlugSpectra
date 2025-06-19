@@ -26,7 +26,6 @@
     "interesting_facts": "Glaucus atlanticus is a pelagic sea slug that floats on the ocean surface, feeding on jellyfish and other cnidarians. It has a unique ability to store the stinging cells (nematocysts) of its prey in its own tissues",
     "color_notes": "Ventral side (upwards) is dark and pale blue; true dorsal surface (downwards) is silvery grey. Features dark blue stripes on its head. Dorsal area of foot varies from dark blue to brown with a silver central position."
   },
-
   "Berghia_coerulescens": {
     "common_name": "Berghia nudibranch",
     "location_distribution": "Eastern Atlantic Ocean and Mediterranean Sea. Originally from French Mediterranean coast, found in central and western Mediterranean (including Adriatic Sea), and Atlantic coasts from Brittany to Canary Islands.",
@@ -50,7 +49,6 @@
     "interesting_facts": "Berghia coerulescens is a popular subject in marine aquariums. It has a specialized diet, primarily feeding on Aiptasia anemones, which makes it a valuable species for controlling these pests in reef tanks.",
     "color_notes": "Body is white, cerata are light blue with yellow tips. May have orange marks on the head between rhinophores and oral tentacles. Rhinophore clubs are orange-brown. Pigmentation develops from consuming anemones, harvesting color from food."
   },
-
   "Costasiella_kuroshimae": {
     "common_name": "Kuroshima slug",
     "location_distribution": "Indo-Pacific, including waters near Japan (Kuroshima, Okinawa), the Philippines, Indonesia, Northern Mariana Islands (Saipan), and Australia (Heron Island, Great Barrier Reef).",
@@ -77,7 +75,6 @@
     "interesting_facts": "Costasiella kuroshimae is known for its unique appearance and behavior. It is often found on the underside of leaves and is capable of photosynthesis due to the presence of chloroplasts from the algae it consumes.",
     "color_notes": "Background color is cream with white patches. White head with dark midline marks and a dark streak in front of rhinophores; may have dark grey-black streak behind eyes. Rhinophores are white with black tips. Cerata are generally green with white tips and iridescent bright blue spots. Some specimens have orange rings or spots on cerata. Coloration can vary based on feeding status, with green color derived from digestive gland contents (chloroplasts)."
   },
-
   "Chromodoris_willani": {
     "common_name": "Willan's chromodorid",
     "location_distribution": "Western Pacific Ocean, from Indonesia and the Philippines to Vanuatu.",
@@ -100,7 +97,6 @@
     "interesting_facts": "Chromodoris willani is known for its vibrant coloration and is often found in shallow reef environments.",
     "color_notes": "Ranges from dark blue to translucent white. Features black stripes, with the center-most stripe typically non-continuous. Distinguished by prominent white specks on gills and rhinophores. Observed color forms include pale blue, white, blue, and browny."
   },
-
   "Phidiana_militaris": {
     "common_name": "Military nudibranch",
     "location_distribution": "Indo-Pacific (tropical and subtropical), including India (original description), Oman, New Zealand, Hong Kong, Thailand, Borneo, Philippines, Australia, and Japan. Also found in Mediterranean Sea as a Lessepsian migrant via Suez Canal (e.g., Haifa Bay, Israel).",
@@ -124,7 +120,6 @@
     "interesting_facts": "Phidiana militaris is known for its striking coloration and is often found in association with hydroids.",
     "color_notes": "Body typically brown or reddish-brown. Features a bright orange median line on the head that forks anteriorly, extending up each oral tentacle. Another orange line runs along the posterior edge of oral tentacles and along each side of the body below the cerata. Oral tentacles, rhinophores, tentacular foot corners, and cerata are tipped with yellow. Rhinophores have a broad orange band. Possesses a very striking color pattern."
   },
-
   "Felimare_cantabrica": {
     "common_name": "Cantabrian chromodorid",
     "location_distribution": "Eastern Atlantic Ocean, specifically Bay of Biscay and Atlantic coasts of Spain and Portugal. Also restricted to the Mediterranean Sea.",
@@ -147,7 +142,6 @@
     "interesting_facts": "Felimare cantabrica is found in rocky reef habitats.",
     "color_notes": "Light and dark blue body, flecked with yellow lines and spots. Mantle edge lined with yellow-light blue-yellow banding. Gills and rhinophores are purple."
   },
-
   "Nembrotha_cristata": {
     "common_name": "Crested nembrotha",
     "location_distribution": "Tropical Indo-West Pacific Ocean, including the Philippines (original description), Indonesia, and Malaysia (Tioman).",
@@ -171,5 +165,496 @@
     "diet": "Compound tunicates, specifically green compound ascidians like Eudistoma olivaceum or Sigillina signifera.",
     "interesting_facts": "Nembrotha cristata is known for its striking appearance and is often found in shallow coral reef habitats. It has a unique feeding behavior, primarily consuming compound tunicates.",
     "color_notes": "Black body with raised green nodules. Rhinophores and gills are black-edged in green. Foot border is green."
+  },
+  "Paraflabellina_ischitana": {
+    "image_filename": "Paraflabellina_ischitana.jpg",
+    "common_name": "Ischitan Flabellina, Orange-Lobed Flabellina",
+    "location": "Mediterranean Sea (Italy, Spain, France) and Eastern Atlantic (Portugal, Canary Islands)",
+    "depth_m": "10.3-38.8",
+    "habitat": "Rocky bottoms, subtidal, sublittoral, infralittoral zones, often associated with hydroids",
+    "size_mm": "30-40",
+    "taxonomy": {
+      "family": "Flabellinidae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Hydroids (Eudendrium species, e.g., Eudendrium racemosum, Eudendrium glomeratum)",
+    "interesting_facts": "Named after Ischia island where it was first described. It was reclassified from the genus Flabellina to Paraflabellina in 2017, with P. ischitana designated as the type species for the new genus.",
+    "color_notes": "Translucent white to violet-purple body with opaque white-tipped cerata, rhinophores, and oral tentacles. Cerata have purple tips and orange rings, revealing red-orange branches of the digestive gland.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Nembrotha_kubaryana": {
+    "image_filename": "Nembrotha_kubaryana.jpg",
+    "common_name": "Variable Nembrotha, Kubary's Nembrotha, Dusky Nembrotha, Variable Neon Slug",
+    "location": "Indo-Pacific region, from East Africa to the Western Pacific (including Red Sea, Indonesia, Philippines, Australia, Japan)",
+    "depth_m": "5-30",
+    "habitat": "Coral reefs and rocky reefs, often on open reefs with ascidians",
+    "size_mm": "80-120",
+    "taxonomy": {
+      "family": "Polyceridae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Colonial tunicates (ascidians), including Eudistoma and Sigillina signifera",
+    "interesting_facts": "Known for its aposematic coloration, it sequesters toxins from its tunicate diet and secretes them as a slimy mucus for defense. Historically, Nembrotha nigerrima was considered a synonym, but N. kubaryana was chosen as the senior synonym.",
+    "color_notes": "Dark green-black body with green pustules or lines. Foot and head border are vivid red-orange. Rhinophores and gills vary from orange to green, often with orange rhinophores and a ring around the sheath.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Nembrotha_purpureolineata": {
+    "image_filename": "Nembrotha_purpureolineata.jpg",
+    "common_name": "Purple-lined Nembrotha",
+    "location": "Tropical Indo-West Pacific Ocean (including Indonesia, Philippines, Papua New Guinea, Western Australia)",
+    "depth_m": "6-14",
+    "habitat": "Coral reefs, rocky substrates, rocky sandy bottoms with weeds and algae",
+    "size_mm": "60-120",
+    "taxonomy": {
+      "family": "Polyceridae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Ascidians and tunicates, specifically the yellow-lined ascidian Clavelina meridionalis",
+    "interesting_facts": "First described from a preserved specimen in 1924. Its synonym, Nembrotha rutilans, was based solely on a painting, leading to N. purpureolineata being given precedence. Its distinctive purple lines make it easily identifiable.",
+    "color_notes": "Creamy white body with prominent longitudinal purple lines, often obscured by a large brown dorsal patch. Brown stripes usually run down the sides of the body and a brown band is found around the head. Rhinophores are red or orange-red with pink or purple stalks. Gills are orange or reddish-orange. Foot often faintly edged with purple.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Hypselodoris_kanga": {
+    "image_filename": "Hypselodoris_kanga.jpg",
+    "common_name": "Kanga's Hypselodoris",
+    "location": "Indian Ocean (Tanzania, Mozambique). Pacific Ocean specimens previously identified as H. kanga are now considered other species.",
+    "depth_m": "5",
+    "habitat": "Coral reefs, rocky reefs, benthic zone near sponges",
+    "size_mm": "40-70",
+    "taxonomy": {
+      "family": "Chromodorididae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Sponges (likely from the family Dysideidae)",
+    "interesting_facts": "Part of a species complex, often confused with similar species like H. bullockii, H. confetti, and H. roo. It is distinguished from these by specific gill morphology.",
+    "color_notes": "Blue-grey body covered in black and yellow spots, with black spots bordered by blue at the mantle edge. Rhinophores are red with deep blue stalks. Gills are triangular, with reddish-orange, deep blue, and white sections, and yellow spots on the outer side.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Nembrotha_megalocera": {
+    "image_filename": "Nembrotha_megalocera.jpg",
+    "common_name": "",
+    "location": "Red Sea",
+    "depth_m": "8-20",
+    "habitat": "Coral reefs and rocky reefs",
+    "size_mm": "45-70",
+    "taxonomy": {
+      "family": "Polyceridae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Colonial ascidians (tunicates)",
+    "interesting_facts": "First described in 1990, this species is known only from the Red Sea. It is characterized by its relatively large rhinophores compared to its body size.",
+    "color_notes": "Black dorsum with a lemon yellow head and gill area. Flank is orange, turning white near the bluish-violet foot margin. Oral tentacles, gill bases, and rhinophores are bluish-violet, with red gill tips and black rhinophores. Rhinophores are notably large.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Flabellina_iodinea": {
+    "image_filename": "Flabellina_iodinea.jpg",
+    "common_name": "Spanish Shawl, Purple Aeolis",
+    "location": "Eastern Pacific Ocean, from British Columbia, Canada, to Baja California, Mexico, including the Gulf of California and Galapagos Islands",
+    "depth_m": "0-40",
+    "habitat": "Rocky intertidal zones, kelp forests, and subtidal reefs",
+    "size_mm": "70",
+    "taxonomy": {
+      "family": "Flabellinidae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Hydroids (Eudendrium species, e.g., Eudendrium ramosum)",
+    "interesting_facts": "Known as the 'Spanish Shawl' due to its flowing cerata. Its vibrant colors (purple body, orange cerata, scarlet rhinophores) are derived from astaxanthin sequestered from its hydroid diet. Can swim by flexing its body to escape predators like sea stars and is mimicked by the amphipod crustacean Podocerus cristatus. Recently reclassified to Flabellinopsis iodinea.",
+    "color_notes": "Purple body, scarlet red rhinophores, and orange cerata. The cerata are red-orange at the base, gradually fading to purple or violet at the tips. All colors are derived from astaxanthin sequestered from its hydroid diet.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Goniobranchus_kuniei": {
+    "image_filename": "Goniobranchus_kuniei.jpg",
+    "common_name": "Kunie's Chromodoris",
+    "location": "Western Pacific Ocean and Eastern Indian Ocean (including New Caledonia, Fiji, Marshall Islands, Australia, Papua New Guinea, Indonesia, Malaysia, Philippines, Taiwan, Japan, Red Sea)",
+    "depth_m": "5-40",
+    "habitat": "Coral reefs, rocky reefs, and sometimes sand or mud bottoms",
+    "size_mm": "40",
+    "taxonomy": {
+      "family": "Chromodorididae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Sponges",
+    "interesting_facts": "Previously known as Chromodoris kuniei, its genus Goniobranchus was reinstated in 2012 based on molecular (DNA) techniques. Its bright, varied color patterns may signal toxicity to predators, and it shares similar patterns with Goniobranchus tritos and Goniobranchus geminus.",
+    "color_notes": "Pale blue or yellowish body with small, rounded tubercles and bright orange or red spots. Mantle has a striking pattern of blue spots with pale blue halos, and a double border of purple and blue. Mantle edge often bordered with a thin orange or yellow line. Gills and rhinophores are orange or red.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+    "Chromodoris_annae": {
+    "image_filename": "Chromodoris_annae.jpg",
+    "common_name": "Anna's magnificent sea slug",
+    "location": "Central Indo-Pacific region (Malaysia, Indonesia, Philippines, Marshall Islands)",
+    "depth_m": "15-30",
+    "habitat": "Coral reefs, shallow coastal shoreline, mangroves, seagrasses",
+    "size_mm": "50",
+    "taxonomy": {
+      "family": "Chromodorididae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Sponges (Petrosaspongia sp.)",
+    "interesting_facts": "Known for absorbing noxious chemicals from its sponge diet (Petrosaspongia sp.) and storing them in mantle glands for defense against predators. Its vibrant coloration is also believed to be aposematic. One reported case of intraspecific aggression involved two individuals lunging and biting each other.",
+    "color_notes": "Main body color varies from blue-grey to intense blue, slightly speckled with tiny black spots. Blue dorsal side and foot bordered with a black line (can be discontinuous). A black dash between the rhinophores distinguishes it. Mantle edge and foot bordered with white and orange to yellow lines. Gills and rhinophores are orange to yellow.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Hexabranchus_sanguineus": {
+    "image_filename": "Hexabranchus_sanguineus.jpg",
+    "common_name": "Spanish Dancer",
+    "location": "Tropical Indo-Pacific (East Africa, Red Sea, French Polynesia, Japan, Australia)",
+    "depth_m": "20-50",
+    "habitat": "Coral reefs, rocky reefs, rubble, and sandy areas",
+    "size_mm": "400",
+    "taxonomy": {
+      "family": "Hexabranchidae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Sponges (non-selective feeder, preys on at least 11 genera of sponges)",
+    "interesting_facts": "One of the largest known nudibranch species, growing up to 40 cm. It can swim away by flapping its appendages when threatened, resembling a flamenco dancer, which earned it the name 'Spanish Dancer'. It also secretes a potent chemical derived from sponges for defense, which is passed to its egg ribbons.",
+    "color_notes": "Usually mottled red with hints of whites, oranges, and pinks. Its bright warning colors act as predator deterrents.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Phyllidia_varicosa": {
+    "image_filename": "Phyllidia_varicosa.jpg",
+    "common_name": "Scrambled egg nudibranch, Fried egg nudibranch, Varicose Phyllidia",
+    "location": "Indo-West Pacific Oceans (including central Pacific, Red Sea, Hawaii)",
+    "depth_m": "1-49",
+    "habitat": "Open on rocks, sand in Halimeda kanaloana beds (with rubble)",
+    "size_mm": "115",
+    "taxonomy": {
+      "family": "Phyllidiidae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Sponges (observed feeding on a cream sponge)",
+    "interesting_facts": "Juveniles of the sea cucumber, Pearsonothuria graeffei, brightly colored, closely resemble and mimic this nudibranch to gain protection from predators due to the nudibranch's toxicity. It is one of the most frequently noticed nudibranchs by divers.",
+    "color_notes": "Elongate-oval with three to six longitudinal, blue-gray ridges composed of smooth, yellow-capped tubercles. Crescent-shaped, blue-gray areas with black spots and yellow-capped tubercles around mantle margin. Rhinophores are yellow. Medial, black longitudinal stripe on the sole of the foot. Occasional animals may have little or no yellow on the tubercles.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Flabellina_affinis": {
+    "image_filename": "Flabellina_affinis.jpg",
+    "common_name": "",
+    "location": "European waters in the Atlantic Ocean (Portugal to Ghana, Canaries) and widespread in the Mediterranean Sea",
+    "depth_m": "50",
+    "habitat": "Rocky bottoms, associated with hydroids",
+    "size_mm": "50",
+    "taxonomy": {
+      "family": "Flabellinidae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Hydroids (Eudendrium species)",
+    "interesting_facts": "Type species of the genus Flabellina. Often confused with Paraflabellina ischitana, but can be distinguished by the opaque violet coloration beneath the subapical white ring on its cerata, where the digestive gland is not visible.",
+    "color_notes": "Body and cerata are typically purple/violet with white tips. The outer part of the digestive gland in each ceras is not visible as the area beneath the subapical white ring is opaque violet in color. Rhinophores are orange.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Hypselodoris_apolegma": {
+    "image_filename": "Hypselodoris_apolegma.jpg",
+    "common_name": "Bubblegum Worm",
+    "location": "Tropical Western Pacific Ocean, Indo-West Pacific Ocean",
+    "depth_m": "",
+    "habitat": "Shallow coastal reefs",
+    "size_mm": "50",
+    "taxonomy": {
+      "family": "Chromodorididae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Yellow sponges (Euryspongia genus)",
+    "interesting_facts": "Commonly known as 'Bubblegum Worm'. Its diet is highly specialized, feeding exclusively on yellow sponges of the genus Euryspongia, making it unsuitable for home aquariums without this specific food source. Recent phylogenetic data confirm its validity and suggest a sister species relationship with Hypselodoris bullockii or Hypselodoris brycei.",
+    "color_notes": "Pinkish-purple body with white spots. Mantle edge, rhinophores, and gills are orange or red.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Thecacera_pacifica": {
+    "image_filename": "Thecacera_pacifica.jpg",
+    "common_name": "Pikachu nudibranch",
+    "location": "African coast of the Indian Ocean (Mozambique) to Indonesia and Vanuatu. Also reported from the Gulf of Mexico, Atlantic Ocean.",
+    "depth_m": "",
+    "habitat": "",
+    "size_mm": "",
+    "taxonomy": {
+      "family": "Polyceridae",
+      "order": "Nudibranchia"
+    },
+    "diet": "",
+    "interesting_facts": "Sometimes nicknamed the 'Pikachu nudibranch' due to its resemblance to the Pokémon character. It has a wide distribution, including both Indo-Pacific and Atlantic Oceans.",
+    "color_notes": "Translucent orange body with black tips to the rhinophores and gills. Rhinophore sheaths edged with black with a patch of blue at the widest part. Blue color also present at the tip of the tail and at the tip of the lateral papillae beside the gills, separated from the orange by a black band. Some specimens have black linear marks on the body with blue centers.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Ceratosoma_amoenum": {
+    "image_filename": "Ceratosoma_amoenum.jpg",
+    "common_name": "Clown nudibranch, Sweet Ceratosoma",
+    "location": "Temperate southern Australia and northern New Zealand, with some sightings off southern Queensland",
+    "depth_m": "3-20",
+    "habitat": "Intertidal zones, subtidal, sublittoral, infralittoral",
+    "size_mm": "60",
+    "taxonomy": {
+      "family": "Chromodorididae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Sponges (Semitaspongia and Dysidea fragilis)",
+    "interesting_facts": "Commonly known as the 'Clown Nudibranch'. It sequesters metabolites from its sponge prey (Semitaspongia and Dysidea fragilis) as a defense mechanism. The size of its spots varies by geographic range, with New Zealand individuals having the largest.",
+    "color_notes": "White body elaborately patterned with orange and purple spots, especially on the dorsum. The size of the spots varies. Gills and rhinophores are crimson-white in color and can be retracted into pockets. Large concentration of mantle glands at the rear of the mantle.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Hypselodoris_tryoni": {
+    "species_name": "Hypselodoris tryoni",
+    "image_filename": "Hypselodoris_tryoni.jpg",
+    "common_name": "Tryon's Hypselodoris",
+    "location": "Tropical Western Pacific Ocean, from Australia to the Philippines; specific sightings in Marshall Islands (Enewetak and Kwajalein Atolls).",
+    "depth_m": "2-30",
+    "habitat": "Benthic zone, commonly found on pilings, lagoon pinnacles, interisland subtidal reefs, near sponges.",
+    "size_mm": 60,
+    "taxonomy": {
+      "family": "Chromodorididae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Sponges, specifically from the family Dysideidae.",
+    "interesting_facts": "Known for its 'trailing' or 'queuing' behavior, where individuals follow each other closely. Sometimes found in a commensal relationship with the emperor shrimp (Periclimenes imperator). Often observed exposed during the day.",
+    "color_notes": "Brown body with a white foot, adorned with distinct purple spots that are often ringed with white or light-brown. The gills are translucent white or light-brown, and the rhinophores are brown to dark-brown with circular white lines. A thin blue or purple line typically outlines the mantle edge.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Hypselodoris_variobranchia": {
+    "species_name": "Hypselodoris variobranchia",
+    "image_filename": "Hypselodoris_variobranchia.jpg",
+    "common_name": "Variegated-Gill Hypselodoris",
+    "location": "Indo-Pacific region, including Queensland (Australia), Malaysia, Indonesia, and Okinawa (Japan). Holotype collected from the Philippines.",
+    "depth_m": 30,
+    "habitat": "Marine, likely coral or rocky reefs, associated with sponges.",
+    "size_mm": 50,
+    "taxonomy": {
+      "family": "Chromodorididae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Sponges (likely Dysideidae or Thorectidae, based on genus characteristics).",
+    "interesting_facts": "Frequently mistaken for other similar-looking species such as Hypselodoris bullocki or Hypselodoris apolegma.",
+    "color_notes": "Characterized by a deep purple body with a broad, solid white border on the mantle. The rhinophore bulb is orange with purple sheaths, and the gills can be either orange or deep purple. The tall gill pocket is distinctly deep purple.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Bornella_anguilla": {
+    "species_name": "Bornella anguilla",
+    "image_filename": "Bornella_anguilla.jpg",
+    "common_name": "Snakey Nudibranch, Eel Bornella",
+    "location": "Widespread Indo-West Pacific, from the East Coast of Africa to Hawaii, including Australia, Indonesia, Kenya, Marshall Islands, Mauritius, Micronesia, New Caledonia, Philippines, Reunion, South Africa, Taiwan, and Tanzania.",
+    "depth_m": "0-18",
+    "habitat": "Subtidal and sublittoral zones, often found between or under soft corals.",
+    "size_mm": "70-80",
+    "taxonomy": {
+      "family": "Bornellidae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Exclusively hydroids.",
+    "interesting_facts": "Named 'anguilla' (eel) due to its distinctive ability to swim by undulating its body. It may absorb the stinging cells (nematocysts) from its hydroid prey for its own defense.",
+    "color_notes": "Displays an intricate mosaic pattern of various sized brown, white, and yellow circles. The body is long and slender, featuring paired appendages (penial spines) with gills. The rhinophores are located on the first pair of appendages, and small tentacles are present around the mouth. When swimming, the tops of its appendages fold shut and can appear red.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Phyllidia_ocellata": {
+    "species_name": "Phyllidia ocellata",
+    "image_filename": "Phyllidia_ocellata.jpg",
+    "common_name": "Ocellated Wart Slug",
+    "location": "Widespread Indo-Pacific region, including the Red Sea, Indonesia, Malaysia, and the Solomon Islands.",
+    "depth_m": "15-35",
+    "habitat": "Marine, primarily coral reefs.",
+    "size_mm": "35-70",
+    "taxonomy": {
+      "family": "Phyllidiidae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Sponges. It lacks a radula and instead secretes digestive enzymes to consume its prey.",
+    "interesting_facts": "This species is toxic, and its vibrant colors and patterns serve as a warning (aposematism) to potential predators. Its dorsal tubercles can exude a milky defensive secretion derived from its sponge diet. Exhibits high variability in its color and pattern.",
+    "color_notes": "Features a golden yellow background with several large, roundish black ocelli (4-10) each encircled by a white ring. Small to large yellow or white hard tubercles are irregularly distributed over the dorsum. The rhinophores are golden yellow. Ventrally, it has a grey hyponotum, secondary gills, and a foot sole with gold-tipped oral tentacles.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Glossodoris_cincta": {
+    "species_name": "Glossodoris cincta",
+    "image_filename": "Glossodoris_cincta.jpg",
+    "common_name": "Girdled Glossodoris",
+    "location": "Indo-West Pacific, with reliable recent records from the Central Indian Ocean and Réunion. Its distribution is often confused with similarly colored species.",
+    "depth_m": "10-43",
+    "habitat": "Marine, likely coral or rocky reefs, associated with sponges.",
+    "size_mm": "50-60",
+    "taxonomy": {
+      "family": "Chromodorididae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Sponges (likely, based on family characteristics).",
+    "interesting_facts": "Its name has been extensively applied to a group of similarly colored species, leading to frequent misidentifications.",
+    "color_notes": "The mantle and foot are typically orange and cream-colored, both encircled by distinctive blue and white bands. The mantle is tawny brown with blue-white dots and a dark blue margin, separated by a thin grey line. Rhinophores are dark brown with blue-white dots.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Mexichromis_macropus": {
+    "species_name": "Mexichromis macropus",
+    "image_filename": "Mexichromis_macropus.jpg",
+    "common_name": "Bigfoot sea-slug",
+    "location": "Endemic to temperate and subtropical southeastern and southwestern Australia, including SW Western Australia, South Australia, Tasmania, Victoria, and New South Wales.",
+    "depth_m": "5-20",
+    "habitat": "Subtidally on hard substrates, typically associated with sponges.",
+    "size_mm": 40,
+    "taxonomy": {
+      "family": "Chromodorididae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Sponges in the genus Dysidea.",
+    "interesting_facts": "This species is generally found infrequently (occurring at only about 1.5% of surveyed sites) and is typically observed as solitary individuals.",
+    "color_notes": "The mantle color ranges from white to pink-purple, adorned with scattered pointed papillae that are tipped in purple. The mantle border features radially arranged orange or yellow-orange stripes.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  },
+  "Aegires_villosus": {
+    "species_name": "Aegires villosus",
+    "image_filename": "Aegires_villosus.jpg",
+    "common_name": "Shaggy Aegires",
+    "location": "Widespread Indo-West Pacific, with documented sightings in the Philippines, Tonga, South Australia, and New Caledonia.",
+    "depth_m": "0-12",
+    "habitat": "Benthic environments including rocky bottoms, silty bottoms with dense gorgonian beds, and intertidal reef crests.",
+    "size_mm": 15,
+    "taxonomy": {
+      "family": "Aegiridae",
+      "order": "Nudibranchia"
+    },
+    "diet": "Calcareous sponges.",
+    "interesting_facts": "A small species, easily recognizable by its purple-tipped papillae. Its gills are often difficult to spot due to their small size and camouflage. Juveniles have proportionally longer papillae than adults.",
+    "color_notes": "The body is generally a base color (often whitish or yellowish) with distinctive long purple-tipped papillae. The feather-like gills are whitish and almost transparent, contributing to their camouflaged appearance.",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
   }
 }
+
