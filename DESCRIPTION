@@ -1,14 +1,18 @@
 Package: SeaSlugSpectra
-Title: SeaSlugSpectra: Bio-inspired Colour Palettes from Nudibranchs
+Title: SeaSlugSpectra: Bio-Inspired Colour Palettes from Nudibranchs
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Author: Riccardo Aucello
-Description: Generates qualitative colour palettes derived from curated
-    images of marine slugs species
+    person("Riccardo", "Aucello", email = "first.last@example.com", role = c("aut", "cre"))
+Description: Provides qualitative colour palettes extracted from curated images 
+    of nudibranch (marine slug) species. Each palette reflects the pigmentation 
+    patterns of a specific species and is intended for use in scientific 
+    visualisation, educational content, and biologically themed design.
 License: MIT + file LICENSE
 URL: https://github.com/RicAuc/SeaSlugSpectra
-BugReports: https://github.com/Ric_Auc/SeaSlugSpectra/issues
+BugReports: https://github.com/RicAuc/SeaSlugSpectra/issues
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.0.0
+RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3

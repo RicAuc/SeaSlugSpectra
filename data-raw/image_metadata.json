@@ -1,0 +1,26 @@
+[
+  {
+    "species_name": "Chromodoris willani",
+    "image_filename": "Chromodoris_willani.jpg",
+    "common_name": "Willan's chromodoris",
+    "location": "Lembeh Strait, Indonesia",
+    "depth_m": 15,
+    "habitat": "",
+    "size_mm": 45,
+    "taxonomy": {
+      "family": "Chromodorididae",
+      "order": "Nudibranchia"
+    },
+    "diet": "",
+    "interesting_facts": "",
+    "color_notes": "",
+    "extraction_parameters": {
+      "n_colors": 5,
+      "method": "kmeans",
+      "color_space": "RGB",
+      "resize": false,
+      "sample_fraction": 1.0,
+      "seed": 42
+    }
+  }
+]
