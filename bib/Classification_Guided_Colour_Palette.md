@@ -2,19 +2,16 @@
 
 ## Overview
 
-The *SeaSlugSpectra* project aims to generate high-quality, biologically inspired qualitative colour palettes from curated images of nudibranchs (sea slugs). Recognising the wide morphological and chromatic diversity within this taxon, the project has introduced a classification-driven methodology to guide palette extraction. 
+The *SeaSlugSpectra* project aims to generate colour palettes from curated images of nudibranchs (sea slugs). Recognising the wide morphological and chromatic diversity within this taxon, the project has introduced a classification-driven methodology to guide palette extraction. 
 
 This framework maps the **visual structure** of each image to a defined **palette classification type**, each associated with a customised extraction strategy. By tailoring the extraction process to the visual organisation of the image, the generated palettes better reflect both the perceptual and biological salience of colour features.
-
-This report summarises the conceptual rationale, classification system, extraction techniques, and implementation implications of this strategy.
 
 ---
 
 ## Motivation for Classification-Based Palette Extraction
 
-Standard colour extraction pipelines — typically using k-means clustering in RGB space with fixed `k` — fail to account for the semantic and structural variability present in biological imagery. Nudibranchs present particular challenges due to:
+Nudibranchs present particular challenges due to:
 
-- High intra-species chromatic diversity
 - Varying degrees of contrast and tonal modulation
 - Morphologies with blended, layered, or segmented pigmentation
 
@@ -83,19 +80,19 @@ To operationalise this system, the following techniques are employed or proposed
 
 ### Fixed k-means Clustering
 - Used in: Flat Synthetic
-- Characteristics: RGB or LAB colour space; hard-coded `k = 4–6`
+- Characteristics: RGB or LAB colour space; hard-coded `k = 4–16`
 - Strength: Stable, repeatable output
 - Weakness: Blind to perceptual redundancy
 
-### Adaptive k-means Clustering with Entropy/Pruning
+### Adaptive k-means Clustering
 - Used in: High Contrast, Segmented
 - Characteristics: `k` determined by elbow or silhouette score; post-hoc cluster rejection based on mass or saturation
 - Strength: Tailored to visual complexity
 - Weakness: Requires additional heuristics
 
-### Perceptual Clustering (CIE-LAB or CIECAM02)
+### Perceptual Clustering
 - Used in: Mid-complexity Naturalistic
-- Characteristics: Hierarchical clustering based on `cie94` or `deltaE2000` distances
+- Characteristics: Hierarchical clustering
 - Strength: Avoids over-splitting similar tones
 - Weakness: Sensitive to image noise
 
@@ -119,16 +116,6 @@ To operationalise this system, the following techniques are employed or proposed
 
 ---
 
-## Conclusion
-
-This classification-guided system for palette extraction represents a substantial refinement over generic clustering approaches.
-
-This system will support both automatic extraction and manual curation, enabling nuanced mapping between biological form and aesthetic representation.
-
-The current design lays a solid methodological foundation for reproducible, semantically coherent palette generation in marine biology-inspired visualisation.
-
----
-
 # Request for Expert Review: Colour Palette Extraction Strategies in SeaSlugSpectra
 
 ## Project Context
@@ -142,13 +129,7 @@ Each image is manually assigned to a **classification type** based on its visual
 We are seeking external evaluation of the current extraction techniques, including their:
 
 - Conceptual soundness
-- Technical reliability
-- Biological plausibility
 - Potential for refinement or replacement
-
-We welcome insights from computational colour scientists, image analysis researchers, or professionals working on colour-based pattern extraction in biological or visual domains.
-
----
 
 ## Extraction Strategy Summary
 
@@ -159,7 +140,7 @@ Each method is tied to a classification of image type. Below, we outline the pro
 ### 1. Fixed k-means Clustering
 
 - **Applied to**: Flat Synthetic
-- **Method**: RGB or LAB clustering with fixed `k = 4–6`
+- **Method**: RGB or LAB clustering with fixed `k` within interval
 - **Output**: Direct palette with no interpolation
 - **Strengths**: Fast, stable across images with simple structure
 - **Limitations**: Fails to generalise if the image has subtle chromatic variation
@@ -175,7 +156,7 @@ Each method is tied to a classification of image type. Below, we outline the pro
 
 ---
 
-### 3. Perceptual Clustering (CIE-LAB or CIECAM02)
+### 3. Perceptual Clustering
 
 - **Applied to**: Mid-complexity Naturalistic
 - **Method**: Clustering using perceptual distance metrics (`deltaE94`, `deltaE2000`)
@@ -215,30 +196,8 @@ Each method is tied to a classification of image type. Below, we outline the pro
 
 We would appreciate your input on the following:
 
-1. **Critique**: Are any of the methods conceptually flawed or technically risky?
-2. **Alternatives**:
-   - Would you recommend clustering methods beyond k-means (e.g., DBSCAN, Gaussian Mixture, mean-shift)?
-   - Would you suggest dimensionality reduction (e.g., t-SNE, UMAP) prior to clustering?
-3. **Post-Processing**:
-   - Should perceptual re-ordering or cluster smoothing be applied after initial palette generation?
-4. **Robustness**:
-   - How might image quality, resolution, or compression affect extraction reliability?
-   - Should adaptive colour space selection be introduced (e.g., HSV vs LAB)?
-5. **Tooling and Metrics**:
-   - Are there established metrics for evaluating palette fidelity? (e.g., entropy, perceptual spread, chromatic balance)
-   - Are you aware of benchmark datasets or tools for biologically inspired palette analysis?
-
----
-
-## Optional Contributions
-
-If appropriate, we also welcome:
-
-- A decision tree for assigning extraction strategies automatically based on image statistics
-- References to open-source implementations or peer-reviewed methods for context-aware palette generation
-- Any published work on biologically motivated colour clustering or pigment pattern segmentation
-
----
+1. **Critique**
+2. **Alternatives**
 
 Please feel free to respond as a code critique, research recommendation, or methodological review. Your feedback will inform the refinement and validation of this typology-driven palette extraction system.
 
@@ -275,10 +234,7 @@ Each classification type is documented in `palette_metadata.json`, and includes:
 
 5. **Record the result** by inserting a new field in the species metadata:
 
-"classification_type": "<Exact name from classification schema>"
-
-
----
+`"classification_type": "<Exact name from classification schema>"`
 
 ## Accepted Classification Values
 
@@ -312,13 +268,14 @@ Use **only one** of the following **verbatim** values:
 
 A complete metadata block with a filled classification might look like:
 
+`
 {
 "species_name": "Chromodoris willani",
 "image_filename": "Chromodoris_willani.jpg",
 ...
 "classification_type": "Flat Synthetic"
 }
-
+`
 
 ---
 
