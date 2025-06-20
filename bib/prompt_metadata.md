@@ -12,10 +12,12 @@ Help complete the following metadata fields for each species. The JSON structure
 For each species, return a JSON object structured as the here example:
 
 ```json
-"Glaucus_atlanticus": {
+  "Glaucus_atlanticus": {
+    "species_name": "Glaucus atlanticus",
     "common_name": "Blue dragon, sea swallow, blue sea slug",
+    "image_filename": "Glaucus_atlanticus.jpg",
     "location_distribution": "Pelagic zone (open ocean), carried by winds and currents; primarily tropical and subtropical areas. Documented sightings include Bay of Bengal, off Tamil Nadu and Andhra Pradesh in India. Populations are localized within distinct ocean basins.",
-    "depth": "Surface (neustonic, floats upside-down).",
+    "depth": "Surface waters, typically floating on the ocean surface.",
     "habitat": "Open ocean surface.",
     "size_mm": "30",
         "taxonomy": {
