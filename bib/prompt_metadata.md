@@ -3,85 +3,40 @@
 
 I am developing an R package called `SeaSlugSpectra` that generates biologically inspired colour palettes from images of nudibranch species.
 
-I have a list of **42 species** (scientific names in `Genus_species` format) and a corresponding `image_metadata.json` file that needs to be filled with biologically accurate metadata.
+I have a list of species (scientific names in `Genus_species` format) and a corresponding `image_metadata.json` file that needs to be filled with biologically accurate metadata.
 
 Help complete the following metadata fields for each species. The JSON structure will be programmatically integrated into the library project. Please return the results in structured JSON format matching the schema below.
-
----
-
-## Fields to Complete (for each species)
-
-1. `common_name`: Widely recognised English name (if one exists)  
-2. `location`: General region or known collection area  
-3. `depth_m`: Typical observed depth range (mean or range preferred, in metres)  
-4. `habitat`: Type of benthic environment (e.g., coral reef, seagrass, sandy bottom)
-5. `size_mm`: Average or maximum adult body size in millimetres  
-6. `taxonomy`: Structured object with:
-
-   - `family`
-   - `order`
-
-7. `diet`: Primary prey or feeding strategy  
-8. `interesting_facts`: Short fact, ecological or behavioural insight  
-9. `color_notes`: Description of its colour pattern
-
----
-
-## Shared Field (for all species)
-
-For all species, you can assume the following identical entry under:
-
-```json
-"extraction_parameters": {
-  "n_colors": 5,
-  "method": "kmeans",
-  "color_space": "RGB",
-  "resize": false,
-  "sample_fraction": 1.0,
-  "seed": 42
-}
-```
-
----
 
 ## Output Format
 
 For each species, return a JSON object structured as the here example:
 
 ```json
-{
-  "species_name": "Chromodoris willani",
-  "image_filename": "Chromodoris_willani.jpg",
-  "common_name": "Willan's chromodoris",
-  "location": "Lembeh Strait, Indonesia",
-  "depth_m": 15,
-  "habitat": "coral reef",
-  "size_mm": 45,
-  "taxonomy": {
-    "family": "Chromodorididae",
-    "order": "Nudibranchia"
-  },
-  "diet": "Sponges",
-  "interesting_facts": "Named after nudibranch expert Dr. Richard Willan.",
-  "color_notes": "Sky-blue body with white longitudinal lines and darker gill plumes.",
-  "extraction_parameters": {
-    "n_colors": 5,
-    "method": "kmeans",
-    "color_space": "RGB",
-    "resize": false,
-    "sample_fraction": 1.0,
-    "seed": 42
+"Glaucus_atlanticus": {
+    "common_name": "Blue dragon, sea swallow, blue sea slug",
+    "location_distribution": "Pelagic zone (open ocean), carried by winds and currents; primarily tropical and subtropical areas. Documented sightings include Bay of Bengal, off Tamil Nadu and Andhra Pradesh in India. Populations are localized within distinct ocean basins.",
+    "depth": "Surface (neustonic, floats upside-down).",
+    "habitat": "Open ocean surface.",
+    "size_mm": "30",
+        "taxonomy": {
+        "order": "Nudibranchia",
+        "family": "Glaucidae"
+        },
+    "diet": "Cnidarians, including venomous siphonophores like the Portuguese man o' war. Uses a radula with serrated teeth, strong jaw, and denticles to grasp and chip prey.",
+    "interesting_facts": "Glaucus atlanticus is a pelagic sea slug that floats on the ocean surface, feeding on jellyfish and other cnidarians. It has a unique ability to store the stinging cells (nematocysts) of its prey in its own tissues",
+    "color_notes": "Ventral side (upwards) is dark and pale blue; true dorsal surface (downwards) is silvery grey. Features dark blue stripes on its head. Dorsal area of foot varies from dark blue to brown with a silver central position.",
+    "classification_type": "",
+    "pic_link": ""
   }
-}
 ```
 
-You may consult credible sources such as Sea Slug Forum, WoRMS, iNaturalist, Wikipedia, scientific papers, and nudibranch photo ID guides. If no data exists for a field, use `""`.
+You may consult credible sources such as Sea Slug Forum, WoRMS, iNaturalist, Wikipedia, Nudipixel, scientific papers, and nudibranch photo ID guides. If no data exists for a field, use `""`.
 
 ---
 
 ## Species Groups
 
-To support manageable lookup tasks, the 42 species have been divided into 6 groups.
+To support manageable lookup tasks, the species have been divided into groups.
 
 ### Group 1
 
@@ -156,32 +111,21 @@ Hypselodoris_obscura
 Chromodoris_magnifica
 ```
 
+### Supplemetary group
+
+```
+Caloria_militaris
+Chelidonura_mandroroa
+Goniobranchus_vibratus
+Goniobranchus_coi
+Tambja_sagamiana
+Hypselodoris_kaname
+Hypselodoris_nigrostriata
+Hypselodoris_krakatoa
+Goniobranchus_leopardus
+Goniobranchus_fidelis
+```
+
 ---
 
-Please ensure each JSON block includes all required fields, formatted for structured ingestion. You can use that as example:
-
-```
-  "Hexabranchus_sanguineus": {
-    "image_filename": "Hexabranchus_sanguineus.jpg",
-    "common_name": "Spanish Dancer",
-    "location": "Tropical Indo-Pacific (East Africa, Red Sea, French Polynesia, Japan, Australia)",
-    "depth_m": "20-50",
-    "habitat": "Coral reefs, rocky reefs, rubble, and sandy areas",
-    "size_mm": "400",
-    "taxonomy": {
-      "family": "Hexabranchidae",
-      "order": "Nudibranchia"
-    },
-    "diet": "Sponges (non-selective feeder, preys on at least 11 genera of sponges)",
-    "interesting_facts": "One of the largest known nudibranch species, growing up to 40 cm. It can swim away by flapping its appendages when threatened, resembling a flamenco dancer, which earned it the name 'Spanish Dancer'. It also secretes a potent chemical derived from sponges for defense, which is passed to its egg ribbons.",
-    "color_notes": "Usually mottled red with hints of whites, oranges, and pinks. Its bright warning colors act as predator deterrents.",
-    "extraction_parameters": {
-      "n_colors": 5,
-      "method": "kmeans",
-      "color_space": "RGB",
-      "resize": false,
-      "sample_fraction": 1.0,
-      "seed": 42
-    }
-  }
-```
+Please ensure each JSON block includes all required fields, formatted for structured ingestion

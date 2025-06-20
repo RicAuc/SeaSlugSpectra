@@ -130,7 +130,8 @@ Aeolid nudibranchs are covered in spikes along their backs called cerata, which 
 
 1. [iNaturalist](https://www.inaturalist.org/)
 2. [WoRMS](https://www.marinespecies.org/)
-2. [Sea Slug Forum](http://www.seaslugforum.net/)
+3. [Sea Slug Forum](http://www.seaslugforum.net/)
+4. [Nudipixel](https://nudipixel.net/)
 
 ## Bibliographic References
 
