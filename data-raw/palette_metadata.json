@@ -1,0 +1,58 @@
+{
+  "High contrast, segmented": {
+    "visual_signature": "Bright, varied patches with sharply bounded colour regions. Little or no blending.",
+    "strategy": "Discrete k-means clustering (k ≈ 6–10). No interpolation.",
+    "notes": "Clear segmentation between colour fields (red, teal, brown, green). Visual structure reflects high spatial modularity. The palette reflects dominant colour blocks without needing smoothing or blending. Suited for palettes with stable length and high inter-colour contrast.",
+    "example": "Abbott, Andri",
+    "nudibranch_signature": "Species with sharply delineated contrasting color zones — e.g. rings, blotches or stripes in red, white, blue or yellow. Common in warningly coloured dorids like *Phyllidia* or *Chromodoris annae*."
+  },
+
+  "Flat Synthetic": {
+    "visual_signature": "Solid blocks of matte colour, high saturation, minimal tonal variation. No textural or gradient transitions.",
+    "strategy": "Direct colour sampling or simple clustering (k = 4–6). No smoothing, interpolation, or weighting.",
+    "notes": "Use when image consists of sharply separated, uniformly coloured regions with minimal chromatic noise. Clustering is straightforward and should prioritise exact colour preservation rather than generalisation or gradient approximation.",
+    "example": "Alkalay1, Budnitz, Connors, Fritsch, Koons, Levine1, Levine2, Liu, Lupi, Ohchi, Palermo, Smith, ustwo, vonHeyl, Warhol",
+    "nudibranch_signature": "Species with clean, unmodulated colour blocks (e.g. bold bands or spots). Frequently observed in stylized juveniles or aposematic slugs like *Hypselodoris bullockii* or *Chromodoris willani*."
+  },
+
+  "Subtle Blending": {
+    "visual_signature": "Smooth transitions in hue, saturation, or brightness. Colours shift gradually without strong edge boundaries.",
+    "strategy": "Use perceptually ordered colours or interpolate between sampled anchors using colorRampPalette() or similar gradient logic.",
+    "notes": "Applied when the dominant colour structure follows a gradual path rather than discrete segmentation. Palette should preserve this continuity for perceptual harmony.",
+    "example": "Alkalay2",
+    "nudibranch_signature": "Species where pigmentation softly transitions across body parts — e.g. mantle edges fading into central body, such as in *Hypselodoris apolegma* or *Glossodoris atromarginata*."
+  },
+
+  "Monochromatic Gradient": {
+    "visual_signature": "Palette constructed from variations of a single hue, gradually shifting in brightness and/or saturation. No major hue change.",
+    "strategy": "Extract tone anchors, then interpolate a gradient across one colour axis (lightness, chroma, or both).",
+    "notes": "Applies when the image is dominated by one colour family with internal tonal structure. Palette should avoid adding foreign hues and maintain perceptual continuity within the hue.",
+    "example": "Althoff, Ernst, Exter, Flash",
+    "nudibranch_signature": "Species that exhibit tone-on-tone shading in one chromatic register — e.g. all-violet or all-blue specimens, such as *Flabellina iodinea* or *Doto greenamyeri*."
+  },
+
+  "Symmetric Bimodal Gradient": {
+    "visual_signature": "Two opposing hue regions connected by a smooth tonal or chromatic transition. Often symmetric or mirrored in palette structure.",
+    "strategy": "Extract anchors at each chromatic pole and interpolate a gradient between them. Ensure perceptual spacing is smooth.",
+    "notes": "Use when an image exhibits a dual-colour field structure with continuous blending (not discrete zones). The palette must preserve this polarity while maintaining harmony through the gradient.",
+    "example": "Avedon, Doughton, Kippenberger, Panton, Picabia, Picasso, Rattner, VanGogh",
+    "nudibranch_signature": "Species with strong warm–cool colour bifurcation — e.g. orange body with blue gills and rhinophores. Seen in species like *Chromodoris magnifica* or *Nembrotha kubaryana*."
+  },
+
+  "Mid-complexity Naturalistic": {
+    "visual_signature": "Multiple moderately distinct hues with low to medium saturation. No dominant gradient or hue family. Colours appear naturally integrated, often with soft transitions.",
+    "strategy": "Use clustering with moderate k (e.g. 5–7) and prioritise perceptual distance over frequency. Avoid interpolation.",
+    "notes": "Best for scenes with subtle environmental colour variation or photographic realism. The palette should reflect ambient diversity without forcing saturation or flattening transitions.",
+    "example": "Clay, Dali, OKeeffe",
+    "nudibranch_signature": "Species with matte, complex patterning and background-matching tones — such as cryptic species in the genus *Cadlina*, or translucent slugs with visible internal structures."
+  },
+
+  "Layered Chromatic Weave": {
+    "visual_signature": "Dense, patterned compositions with overlapping or interwoven chromatic zones. Colour structure is defined by rhythm, recurrence, and contrast rather than hierarchy or segmentation.",
+    "strategy": "Sample across layers while preserving dominant hues. Avoid clustering; emphasize hue recurrence and relative weight.",
+    "notes": "Use when colour is applied through repeated visual textures or layers rather than bounded fields. Suitable for expressive, semi-abstract compositions.",
+    "example": "Sidhu",
+    "nudibranch_signature": "Species with intricate marbling, translucency, or layered pigmentation — e.g. cerata-ringed aeolids or slugs with network-like body colouration such as *Janolus* or *Dendronotus* species."
+  }
+}
+
