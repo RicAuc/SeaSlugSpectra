@@ -131,65 +131,8 @@ Your task is to perform **deep web research** to retrieve one high-quality image
 ## Species List
 
 ```
-Chromodoris_willani
-Berghia_coerulescens
-Costasiella_kuroshimae
-Glaucus_atlanticus
-Phidiana_militaris
-Felimare_cantabrica
-Nembrotha_cristata
-Paraflabellina_ischitana
-Nembrotha_kubaryana
-Nembrotha_purpureolineata
-Hypselodoris_kanga
-Nembrotha_megalocera
-Flabellina_iodinea
-Goniobranchus_kuniei
-Chromodoris_annae
-Hexabranchus_sanguineus
-Phyllidia_varicosa
-Flabellina_affinis
+Genus_species
 ```
-
-```
-Hypselodoris_apolegma
-Thecacera_pacifica
-Ceratosoma_amoenum
-Hypselodoris_tryoni
-Hypselodoris_variobranchia
-Bornella_anguilla
-Phyllidia_ocellata
-Glossodoris_cincta
-Mexichromis_macropus
-Aegires_villosus
-Felimare_picta
-Janolus_savinkini
-Goniobranchus_geminus
-Polycera_quadrilineata
-Fjordia_lineata
-Hermissenda_crassicornis
-Ceratosoma_tenue
-```
-
-```
-Felimare_californiensis
-Tambja_verconis
-Hypselodoris_decorata
-Hypselodoris_infucata
-Tambja_blacki
-Hypselodoris_obscura
-Chromodoris_magnifica
-Caloria_militaris
-Chelidonura_mandroroa
-Goniobranchus_vibratus
-Goniobranchus_coi
-Tambja_sagamiana
-Hypselodoris_kaname
-Hypselodoris_nigrostriata
-Hypselodoris_krakatoa
-Goniobranchus_leopardus
-Goniobranchus_fidelis
-``` 
 
 For each species, return a structured JSON object with the following schema:
 
@@ -334,17 +277,23 @@ For each species, return a JSON object structured as the here example:
 
 You may consult credible sources such as Sea Slug Forum, WoRMS, iNaturalist, Wikipedia, Nudipixel, scientific papers, and nudibranch photo ID guides. If no data exists for a field, use `""`.
 
----
-
-## Species Groups
-
-To support manageable lookup tasks, the species have been divided into groups like:
-
+```json
+{
+  "species_name": "Scientific name in 'Genus species' format",
+  "image_filename": "Filename of the corresponding image stored in 'images-raw/' (e.g., 'Glossodoris_atromarginata.jpg')",
+  "common_name": "Recognised English name of the species (if available)",
+  "location": "Geographic collection locality (e.g., 'Raja Ampat, Indonesia', or 'Great Barrier Reef, Australia')",
+  "depth_m": "Approximate depth in metres where the specimen was observed (numeric or string if uncertain, e.g., 18 or '10–20')",
+  "habitat": "Brief description of the habitat where the specimen was encountered (e.g., 'coral reef slope', 'sandy lagoon', 'rubble patch')",
+  "size_mm": "Total body length of the individual in millimetres (estimated or measured; use an integer or range)",
+  "taxonomy": {
+    "order": "Higher order classification (e.g., 'Nudibranchia')",
+    "family": "Taxonomic family (e.g., 'Chromodorididae')"
+  },
+  "diet": "Description of known diet or feeding behaviour (e.g., 'feeds on sponges of the genus Dysidea')",
+  "interesting_facts": "Optional field highlighting behavioural, physiological, or ecological notes (e.g., 'produces distasteful mucus as a defense', or 'exhibits group foraging')",
+  "color_notes": "Observations on body colouration pattern and chromatic features (e.g., 'high-contrast blue and orange bands; likely aposematic')",
+  "classification_type": "One of the defined palette extraction classes: 'Flat Synthetic', 'High contrast, segmented', 'Subtle Blending', 'Monochromatic Gradient', 'Symmetric Bimodal Gradient', 'Mid-complexity Naturalistic', or 'Layered Chromatic Weave'",
+  "pic_link": "Optional URL linking to the image source or reference photo (can be used in visual documentation or public-facing datasets)"
+}
 ```
-Caloria_militaris
-Chelidonura_mandroroa
-Goniobranchus_vibratus
-Goniobranchus_coi
-```
-
-Please ensure each JSON block includes all required fields, formatted for structured ingestion
