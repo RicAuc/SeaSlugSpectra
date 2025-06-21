@@ -1,6 +1,76 @@
 
 # Nudibranchs: Morphology, Ecology, and Evolutionary Significance
 
+Develop a personalised R package that generates qualitative colour palettes based on images of marine nudibranch species. This work is inspired by the MoMAColors GitHub repository, which provides palettes derived from artworks at the Museum of Modern Art in New York.
+
+The objective is to build an R library that captures the rich pigmentation patterns of nudibranchs—each palette corresponding to a specific species. These palettes will be extracted from curated images and structured for use in scientific visualisation, design, and educational applications.
+
+I will be developing this package from scratch, using GitHub for version control, Visual Studio Code as my main development environment, and GitHub Copilot for assisted coding. I plan to follow best practices in R package development but may need guidance throughout the design and implementation phases.
+
+Can you help me set up this project step by step—starting from high-level structuring and planning, all the way to implementation, documentation, and packaging?
+
+---
+
+## Introduction to Nudibranchs
+This is Suzie. Suzie is a sea slug. She's a mollusk in the class Gastropoda, which includes snails and slugs. Suzie and her kind remind us that sometimes, taking a risk, like leaving your shell and untwisting, can lead to the most beautiful and unexpected transformations. More specifically, she's a nudibranch. There are about 3,000 known species of nudibranchs. They come in two main body plans.
+
+### Eolid Nudibranchs
+The first are the eolid nudibranchs, whose backs are covered in finger-like extensions called cerata. These cerata are actually extensions of their digestive system, and they also help the nudibranch breathe. Eolids have a special relationship with their food.
+
+### Dorid Nudibranchs
+The other main group are the dorid nudibranchs. They have a sturdier, more oval body and a mantle that can look like a frilly skirt or a fashionable poncho Some dorid species, like the Spanish dancer nudibranch, can use their mantle to swim. They flex their body in a rhythmic, undulating motion to move through the water.
+
+## Nudibranch Sensory Organs
+Nudibranchs have a pair of sensory tentacles called rhinophores on top of their heads. These function a lot like nostrils, detecting chemical signals in the water.
+
+Near the base of their rhinophores are their eyes, but these are very simple. Nudibranch eyes are tiny, only capable of distinguishing between light and dark.
+
+On the back of the dorid nudibranch near their anus, they have a plume of gills. These gills are highly folded structures that maximize the surface area for the extraction of oxygen from the water.
+
+## Evolutionary History and Torsion
+Though they don't have shells now, baby nudibranchs do resemble snails with shells.
+
+To understand this, we need to go back in time to the ancestral gastropod. Scientists call the twisted body plan that characterizes snails and slugs torsion.
+
+This evolutionary twist of the body causes the anus, gills, and mantle cavity to migrate forward, eventually resting above the head. It's thought that this arrangement helped the ancestral gastropod pull its head into its shell first when threatened.
+
+But as nudibranchs transition from the larval to the juvenile state, they shed their shell and untwist, a process called detorsion. This rearranges their organs from a squished, twisted mess into a more logical, "unsnailed" configuration.
+
+## Feeding Habits
+Nudibranchs have two small feeding tentacles between their rhinophores that help them locate food.
+
+Nudibranchs are carnivorous predators and will eat a variety of animals, including sponges, barnacles, hydroids, other slugs, and even other nudibranchs.
+
+Most species eat using a tough beak and a unique tongue-like structure called a radula that's covered in rows of tiny teeth. The radula acts like a chainsaw, scraping or cutting off pieces of prey.
+
+The Melibe genus has a completely different way of eating. They have evolved a specialized head shaped like a Venus flytrap to scoop small crustaceans and other organisms off the seafloor.
+
+## Defense Mechanisms
+Since they don't have shells to hide in, nudibranchs have to get creative when it comes to defending themselves.
+
+Some are excellent at camouflage, blending seamlessly into their surroundings, allowing them to hide from predators.
+
+Other nudibranchs, like the ghost Melibe, are transparent, making them difficult to see.
+
+Many dorid nudibranchs consume toxic prey and incorporate the toxins into their own bodies, making them unappetizing to predators. Their bright coloring acts as a warning sign.
+
+Eolid nudibranchs take this a step further. They're able to eat organisms with stinging cells, called nematocysts, and relocate those stinging cells, undischarged, to the very tips of their cerata, where they can be used for the nudibranch's own defense.
+
+Some eolid nudibranchs even steal zooxanthellae, which are microscopic plant cells, from their prey. They then incorporate these into their cerata, essentially becoming solar-powered, able to produce their own food from sunlight.
+
+## Reproduction
+Nudibranchs are solitary creatures, so when it comes time to reproduce, they typically find a mate by following a slime trail left by another nudibranch.
+
+Their genitals are located on the right side of their body, near their head.
+
+Nudibranchs are hermaphrodites, meaning each individual possesses both male and female reproductive organs.
+
+During mating, both nudibranchs insert their penises into the other's vagina, resulting in mutual fertilization.
+
+The nudibranch penis is often barbed and hook-shaped, which can make uncoupling difficult. Some species, like Chromodoris reticulata, have evolved a surprising solution: they simply detach their penis after mating and regrow a new one within 24 hours.
+
+After successful fertilization, nudibranchs lay their eggs in elaborate, ribbon-like strings or rosettes.
+
 ## Introduction
 
 Nudibranchs, commonly referred to as *sea slugs* or poetically as *butterflies of the sea*, constitute a diverse order of marine gastropod molluscs, comprising over 4,700 described species. 
@@ -81,48 +151,9 @@ Aeolid nudibranchs are covered in spikes along their backs called cerata, which 
 
 ## Species List (Formatted with Underscores)
 
-1. Glaucus_atlanticus  
-2. Berghia_coerulescens  
-3. Costasiella_kuroshimae  
-4. Chromodoris_willani  
-5. Phidiana_militaris  
-6. Felimare_cantabrica  
-7. Nembrotha_cristata  
-8. Paraflabellina_ischitana  
-9. Nembrotha_kubaryana  
-10. Nembrotha_purpureolineata  
-11. Hypselodoris_kanga  
-12. Nembrotha_megalocera  
-13. Flabellina_iodinea  
-14. Goniobranchus_kuniei  
-15. Chromodoris_annae  
-16. Hexabranchus_sanguineus  
-17. Phyllidia_varicosa  
-18. Flabellina_affinis  
-19. Hypselodoris_apolegma  
-20. Thecacera_pacifica  
-21. Ceratosoma_amoenum  
-22. Hypselodoris_tryoni  
-23. Hypselodoris_variobranchia  
-24. Bornella_anguilla  
-25. Phyllidia_ocellata  
-26. Glossodoris_cincta  
-27. Mexichromis_macropus  
-28. Aegires_villosus  
-29. Felimare_picta  
-30. Janolus_savinkini  
-31. Goniobranchus_geminus  
-32. Polycera_quadrilineata  
-33. Fjordia_lineata  
-34. Hermissenda_crassicornis  
-35. Ceratosoma_tenue  
-36. Felimare_californiensis  
-37. Tambja_verconis  
-38. Hypselodoris_decorata  
-39. Hypselodoris_infucata  
-40. Tambja_blacki  
-41. Hypselodoris_obscura  
-42. Chromodoris_magnifica
+```
+Genus_species
+```
 
 ---
 

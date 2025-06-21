@@ -1,8 +1,0 @@
-I would like to initiate a new project. The goal is to develop a personalised R package that generates qualitative colour palettes based on images of marine nudibranch species. This work is inspired by the MoMAColors GitHub repository, which provides palettes derived from artworks at the Museum of Modern Art in New York.
-
-In a similar spirit, my objective is to build an R library that captures the rich and biologically meaningful pigmentation patterns of nudibranchs—each palette corresponding to a specific species. These palettes will be extracted from curated images and structured for use in scientific visualisation, design, and educational applications.
-
-I will be developing this package from scratch, using GitHub for version control, Visual Studio Code as my main development environment, and GitHub Copilot for assisted coding. I plan to follow best practices in R package development but may need guidance throughout the design and implementation phases.
-
-Can you help me set up this project step by step—starting from high-level structuring and planning, all the way to implementation, documentation, and packaging?
-

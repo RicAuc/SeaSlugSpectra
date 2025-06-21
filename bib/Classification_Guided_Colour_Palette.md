@@ -10,12 +10,7 @@ This framework maps the **visual structure** of each image to a defined **palett
 
 ## Motivation for Classification-Based Palette Extraction
 
-Nudibranchs present particular challenges due to:
-
-- Varying degrees of contrast and tonal modulation
-- Morphologies with blended, layered, or segmented pigmentation
-
-To address these challenges, the current framework classifies images into one of several **Visual Signature Types**, each guiding the design of the palette extraction strategy. This allows for palettes that are not only technically consistent but also **aesthetically and biologically meaningful**.
+Nudibranchs present particular challenges due to: (i) varying degrees of contrast and tonal modulation and (ii) Morphologies with blended, layered, or segmented pigmentation. To address these challenges, the current framework classifies images into one of several **Visual Signature Types**, each guiding the design of the palette extraction strategy.
 
 ---
 
@@ -23,96 +18,63 @@ To address these challenges, the current framework classifies images into one of
 
 Each classification type is defined by its characteristic visual structure and linked to a palette extraction strategy. Below, each type is described in terms of visual logic, extraction method, technical notes, and examples (based on analogues from the MoMAColors reference set).
 
-### 1. Flat Synthetic
+```yaml
+classification_types:
+  - name: Flat Synthetic
+    visual_signature: "Solid blocks of matte colour; high saturation; minimal tonal variation. No gradient transitions."
+    strategy: "Direct RGB sampling or k-means clustering with fixed `k = 4–15`. No interpolation or smoothing."
+    notes: "Applicable to slugs with bold, uniform colour bands or blocks. The goal is to preserve chromatic identity with minimal generalisation."
+    examples: [Alkalay1, Budnitz, Connors, Koons, ustwo]
 
-- **Visual Signature**: Solid blocks of matte colour; high saturation; minimal tonal variation. No gradient transitions.
-- **Strategy**: Direct RGB sampling or k-means clustering with fixed `k = 4–6`. No interpolation or smoothing.
-- **Notes**: Applicable to slugs with bold, uniform colour bands or blocks. The goal is to preserve chromatic identity with minimal generalisation.
-- **Examples**: Alkalay1, Budnitz, Connors, Koons, ustwo
+  - name: High Contrast, Segmented
+    visual_signature: "Bright, varied patches with sharply bounded colour regions. High inter-colour contrast."
+    strategy: "Adaptive k-means clustering (`k = 4–15`), followed by pruning of low-saturation or low-frequency clusters."
+    notes: "Ideal for segmented slugs with modular colour fields, often aposematic. Palette should emphasise separation and diversity."
+    examples: [Abbott, Andri]
 
-### 2. High Contrast, Segmented
+  - name: Subtle Blending
+    visual_signature: "Smooth transitions across hue, saturation, or lightness. No dominant edges."
+    strategy: "Extract colour anchors at perceptual inflection points; interpolate using perceptual gradients (e.g., `colorRampPalette()` in HCL space)."
+    notes: "Appropriate when colour shifts gradually across the slug’s surface. Palettes must preserve perceptual continuity."
+    examples: [Alkalay2]
 
-- **Visual Signature**: Bright, varied patches with sharply bounded colour regions. High inter-colour contrast. 
-- **Strategy**: Adaptive k-means clustering (`k ≈ 6–10`), followed by pruning of low-saturation or low-frequency clusters.
-- **Notes**: Ideal for segmented slugs with modular colour fields, often aposematic. Palette should emphasise separation and diversity.
-- **Examples**: Abbott, Andri
+  - name: Monochromatic Gradient
+    visual_signature: "Single dominant hue expressed through variations in lightness, saturation, or chroma. Minimal hue change."
+    strategy: "Isolate the principal hue region; sample tones at key lightness intervals; interpolate along a single chromatic axis."
+    notes: "Preserves the integrity of tone-on-tone slugs while preventing spurious hue introduction."
+    examples: [Althoff, Ernst, Exter, Flash]
 
-### 3. Subtle Blending
+  - name: Symmetric Bimodal Gradient
+    visual_signature: "Two opposing hue poles connected by a perceptually smooth gradient or transition."
+    strategy: "Extract anchors at each chromatic extreme and interpolate across them in LAB or HCL space, ensuring perceptual symmetry."
+    notes: "Best applied when a slug exhibits clear warm/cool or complementary contrasts. Ensures balanced perceptual weight across the palette."
+    examples: [Avedon, Kippenberger, Picasso, VanGogh]
 
-- **Visual Signature**: Smooth transitions across hue, saturation, or lightness. No dominant edges.
-- **Strategy**: Extract colour anchors at perceptual inflection points; interpolate using perceptual gradients (e.g., `colorRampPalette()` in HCL space).
-- **Notes**: Appropriate when colour shifts gradually across the slug’s surface. Palettes must preserve perceptual continuity.
-- **Examples**: Alkalay2
+  - name: Mid-complexity Naturalistic
+    visual_signature: "Multiple moderately distinct hues; medium saturation; no single dominant gradient. Colours appear ambient or softly integrated."
+    strategy: "Perceptual clustering in LAB space with moderate `k = 4–15`, prioritising perceptual uniqueness over frequency."
+    notes: "Designed for realistic or photographic imagery where colour variation exists but is not schematic or symbolic."
+    examples: [Clay, Dali, OKeeffe]
 
-### 4. Monochromatic Gradient
+  - name: Layered Chromatic Weave
+    visual_signature: "Overlapping or interwoven chromatic textures. No strict segmentation or gradient. Colour structure is rhythmic and layered."
+    strategy: "Hue-frequency analysis and saliency-weighted sampling. Avoid interpolation or k-means clustering."
+    notes: "Suitable for images where visual richness emerges from repeated colour patterns (e.g., marbling, networked pigmentation)."
+    examples: [Sidhu]
+```
 
-- **Visual Signature**: Single dominant hue expressed through variations in lightness, saturation, or chroma. Minimal hue change.
-- **Strategy**: Isolate the principal hue region; sample tones at key lightness intervals; interpolate along a single chromatic axis.
-- **Notes**: Preserves the integrity of tone-on-tone slugs while preventing spurious hue introduction.
-- **Examples**: Althoff, Ernst, Exter, Flash
-
-### 5. Symmetric Bimodal Gradient
-
-- **Visual Signature**: Two opposing hue poles connected by a perceptually smooth gradient or transition.
-- **Strategy**: Extract anchors at each chromatic extreme and interpolate across them in LAB or HCL space, ensuring perceptual symmetry.
-- **Notes**: Best applied when a slug exhibits clear warm/cool or complementary contrasts. Ensures balanced perceptual weight across the palette.
-- **Examples**: Avedon, Kippenberger, Picasso, VanGogh
-
-### 6. Mid-complexity Naturalistic
-
-- **Visual Signature**: Multiple moderately distinct hues; medium saturation; no single dominant gradient. Colours appear ambient or softly integrated.
-- **Strategy**: Perceptual clustering in LAB space with moderate `k = 5–7`, prioritising perceptual uniqueness over frequency.
-- **Notes**: Designed for realistic or photographic imagery where colour variation exists but is not schematic or symbolic.
-- **Examples**: Clay, Dali, OKeeffe
-
-### 7. Layered Chromatic Weave
-
-- **Visual Signature**: Overlapping or interwoven chromatic textures. No strict segmentation or gradient. Colour structure is rhythmic and layered.
-- **Strategy**: Hue-frequency analysis and saliency-weighted sampling. Avoid interpolation or k-means clustering.
-- **Notes**: Suitable for images where visual richness emerges from repeated colour patterns (e.g., marbling, networked pigmentation).
-- **Examples**: Sidhu
+To operationalise this system, the following techniques are employed or proposed, each aligned with one or more classification types
 
 ---
 
-## Technical Summary of Extraction Methods
-
-To operationalise this system, the following techniques are employed or proposed, each aligned with one or more classification types:
-
-### Fixed k-means Clustering
-- Used in: Flat Synthetic
-- Characteristics: RGB or LAB colour space; hard-coded `k = 4–16`
-- Strength: Stable, repeatable output
-- Weakness: Blind to perceptual redundancy
-
-### Adaptive k-means Clustering
-- Used in: High Contrast, Segmented
-- Characteristics: `k` determined by elbow or silhouette score; post-hoc cluster rejection based on mass or saturation
-- Strength: Tailored to visual complexity
-- Weakness: Requires additional heuristics
-
-### Perceptual Clustering
-- Used in: Mid-complexity Naturalistic
-- Characteristics: Hierarchical clustering
-- Strength: Avoids over-splitting similar tones
-- Weakness: Sensitive to image noise
-
-### Anchor Sampling + Interpolation
-- Used in: Subtle Blending, Symmetric Bimodal Gradient
-- Characteristics: Identify chromatic extremes, interpolate in perceptually uniform space (HCL, LAB)
-- Strength: Creates perceptually smooth gradients
-- Weakness: Dependent on well-chosen anchors
-
-### Monochromatic Interpolation
-- Used in: Monochromatic Gradient
-- Characteristics: Identify dominant hue region, interpolate across lightness or chroma axis
-- Strength: Highly constrained and interpretable
-- Weakness: Does not generalise to poly-hued images
-
-### Histogram Sampling without Clustering
-- Used in: Layered Chromatic Weave
-- Characteristics: Non-parametric sampling based on hue salience and recurrence
-- Strength: Captures visual texture and rhythm
-- Weakness: Difficult to reduce to a fixed-size palette
+| **Method Name**                   | **Used in**                             | **Characteristics**                                                                 | **Strength**                                      | **Weakness**                                                  |
+|----------------------------------|------------------------------------------|--------------------------------------------------------------------------------------|--------------------------------------------------|---------------------------------------------------------------|
+| Fixed k-means Clustering         | Flat Synthetic                           | RGB or LAB colour space; hard-coded `k = 4–16`                                      | Stable, repeatable output                         | Blind to perceptual redundancy                                 |
+| Adaptive k-means Clustering      | High Contrast, Segmented                 | `k` determined by elbow or silhouette score; post-hoc cluster rejection based on mass or saturation | Tailored to visual complexity                     | Requires additional heuristics                                 |
+| Perceptual Clustering            | Mid-complexity Naturalistic              | Hierarchical clustering                                                             | Avoids over-splitting similar tones              | Sensitive to image noise                                       |
+| Anchor Sampling + Interpolation  | Subtle Blending, Symmetric Bimodal Gradient | Identify chromatic extremes, interpolate in perceptually uniform space (HCL, LAB)  | Creates perceptually smooth gradients            | Dependent on well-chosen anchors                               |
+| Monochromatic Interpolation      | Monochromatic Gradient                   | Identify dominant hue region, interpolate across lightness or chroma axis           | Highly constrained and interpretable             | Does not generalise to poly-hued images                        |
+| Histogram Sampling without Clustering | Layered Chromatic Weave               | Non-parametric sampling based on hue salience and recurrence                        | Captures visual texture and rhythm               | Difficult to reduce to a fixed-size palette                    |
 
 ---
 
@@ -133,73 +95,128 @@ We are seeking external evaluation of the current extraction techniques, includi
 
 ## Extraction Strategy Summary
 
-Each method is tied to a classification of image type. Below, we outline the proposed strategies along with their associated use cases, strengths, and potential issues.
+Each method is tied to a classification of image type. Below, we outline the proposed strategies along with their associated use cases, strengths, and potential issues:
 
----
-
-### 1. Fixed k-means Clustering
-
-- **Applied to**: Flat Synthetic
-- **Method**: RGB or LAB clustering with fixed `k` within interval
-- **Output**: Direct palette with no interpolation
-- **Strengths**: Fast, stable across images with simple structure
-- **Limitations**: Fails to generalise if the image has subtle chromatic variation
-
----
-
-### 2. Adaptive k-means Clustering with Pruning
-
-- **Applied to**: High Contrast, Segmented
-- **Method**: `k` determined by silhouette score or entropy plateau; noise or low-mass clusters are removed
-- **Strengths**: Handles visual complexity, responsive to colour diversity
-- **Limitations**: Output sensitive to heuristic thresholds; may oversample noise without refinement
-
----
-
-### 3. Perceptual Clustering
-
-- **Applied to**: Mid-complexity Naturalistic
-- **Method**: Clustering using perceptual distance metrics (`deltaE94`, `deltaE2000`)
-- **Strengths**: Respects human perceptual sensitivity to colour differences
-- **Limitations**: Sensitive to image artefacts; clustering may be influenced by uneven illumination or background tones
-
----
-
-### 4. Anchor Sampling + Interpolation
-
-- **Applied to**: Subtle Blending, Symmetric Bimodal Gradient
-- **Method**: Entropy-based anchor identification followed by interpolation in perceptually uniform colour space (e.g., HCL or LAB)
-- **Strengths**: Produces smooth, perceptually coherent palettes
-- **Limitations**: Selection of representative anchors is non-trivial; subjectivity can affect reproducibility
-
----
-
-### 5. Monochromatic Interpolation
-
-- **Applied to**: Monochromatic Gradient
-- **Method**: Identify dominant hue range; interpolate over lightness or chroma while keeping hue constant
-- **Strengths**: Constrained and interpretable; avoids arbitrary hue introduction
-- **Limitations**: Fragile in cases of hidden hue variance or subtle contamination from background elements
-
----
-
-### 6. Histogram-Based Sampling without Clustering
-
-- **Applied to**: Layered Chromatic Weave
-- **Method**: Identify hue peaks using histogram salience or recurrence weighting
-- **Strengths**: Captures colour rhythm and texture diversity in layered or patterned compositions
-- **Limitations**: Difficult to parameterise; output may vary with resolution or visual noise
+| **#** | **Method Name**                            | **Applied to**                        | **Method**                                                                                 | **Output**                                   | **Strengths**                                                                                 | **Limitations**                                                                                         |
+|------|---------------------------------------------|----------------------------------------|---------------------------------------------------------------------------------------------|----------------------------------------------|------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| 1    | Fixed k-means Clustering                    | Flat Synthetic                         | RGB or LAB clustering with fixed `k` within interval                                        | Direct palette with no interpolation         | Fast, stable across images with simple structure                                              | Fails to generalise if the image has subtle chromatic variation                                          |
+| 2    | Adaptive k-means Clustering with Pruning    | High Contrast, Segmented               | `k` determined by silhouette score or entropy plateau; noise or low-mass clusters are removed | Direct palette with selective filtering       | Handles visual complexity, responsive to colour diversity                                     | Output sensitive to heuristic thresholds; may oversample noise without refinement                         |
+| 3    | Perceptual Clustering                       | Mid-complexity Naturalistic            | Clustering using perceptual distance metrics                     | Clustered palette via perceptual distance     | Respects human perceptual sensitivity to colour differences                                    | Sensitive to image artefacts; clustering may be influenced by uneven illumination or background tones     |
+| 4    | Anchor Sampling + Interpolation             | Subtle Blending, Symmetric Bimodal Gradient | Entropy-based anchor identification followed by interpolation in perceptually uniform colour space | Interpolated perceptual gradient             | Produces smooth, perceptually coherent palettes                                               | Selection of representative anchors is non-trivial; subjectivity can affect reproducibility              |
+| 5    | Monochromatic Interpolation                 | Monochromatic Gradient                 | Identify dominant hue range; interpolate over lightness or chroma while keeping hue constant | Gradient palette constrained to one hue       | Constrained and interpretable; avoids arbitrary hue introduction                               | Fragile in cases of hidden hue variance or subtle contamination from background elements                 |
+| 6    | Histogram-Based Sampling without Clustering | Layered Chromatic Weave                | Hue-frequency analysis and saliency-weighted sampling; avoids clustering                    | Palette based on hue salience and recurrence | Captures colour rhythm and texture diversity in layered or patterned compositions              | Difficult to parameterise; output may vary with resolution or visual noise                               |
 
 ---
 
 ## Request for Evaluation
 
-We would appreciate your input on the following:
+We would appreciate your input on the following: (1) **Critique** and (2) **Alternatives**. Please feel free to respond as a code critique, research recommendation, or methodological review. Your feedback will inform the refinement and validation of this typology-driven palette extraction system.
 
-1. **Critique**
-2. **Alternatives**
+---
 
-Please feel free to respond as a code critique, research recommendation, or methodological review. Your feedback will inform the refinement and validation of this typology-driven palette extraction system.
+# Nudibranch Species Image Mining
+
+Development of an R package called `SeaSlugSpectra`, which generates colour palettes from images of nudibranch species. Each palette corresponds to a single nudibranch species and is derived from curated high-definition imagery.
+
+To support visual validation, palette interpretation, and documentation, we require **direct image links** from different platforms:
+
+- [Nudipixel](https://nudipixel.net/)
+- [iNaturalist](https://www.inaturalist.org/)
+- [World Register of Marine Species (WoRMS)](https://www.marinespecies.org/)
+- [Sea Slug Forum](http://www.seaslugforum.net/)
+- [Wikipedia](https://en.wikipedia.org/)
+
+Your task is to perform **deep web research** to retrieve one high-quality image link per source **per nudibranch species** listed below.
+
+## Species List
+
+```
+Chromodoris_willani
+Berghia_coerulescens
+Costasiella_kuroshimae
+Glaucus_atlanticus
+Phidiana_militaris
+Felimare_cantabrica
+Nembrotha_cristata
+Paraflabellina_ischitana
+Nembrotha_kubaryana
+Nembrotha_purpureolineata
+Hypselodoris_kanga
+Nembrotha_megalocera
+Flabellina_iodinea
+Goniobranchus_kuniei
+Chromodoris_annae
+Hexabranchus_sanguineus
+Phyllidia_varicosa
+Flabellina_affinis
+```
+
+```
+Hypselodoris_apolegma
+Thecacera_pacifica
+Ceratosoma_amoenum
+Hypselodoris_tryoni
+Hypselodoris_variobranchia
+Bornella_anguilla
+Phyllidia_ocellata
+Glossodoris_cincta
+Mexichromis_macropus
+Aegires_villosus
+Felimare_picta
+Janolus_savinkini
+Goniobranchus_geminus
+Polycera_quadrilineata
+Fjordia_lineata
+Hermissenda_crassicornis
+Ceratosoma_tenue
+```
+
+```
+Felimare_californiensis
+Tambja_verconis
+Hypselodoris_decorata
+Hypselodoris_infucata
+Tambja_blacki
+Hypselodoris_obscura
+Chromodoris_magnifica
+Caloria_militaris
+Chelidonura_mandroroa
+Goniobranchus_vibratus
+Goniobranchus_coi
+Tambja_sagamiana
+Hypselodoris_kaname
+Hypselodoris_nigrostriata
+Hypselodoris_krakatoa
+Goniobranchus_leopardus
+Goniobranchus_fidelis
+``` 
+
+For each species, return a structured JSON object with the following schema:
+
+```json
+[
+  {
+    "species": "Caloria militaris",
+    "nudi_link": "https://nudipixel.net/photo/00004806",
+    "inaturalist_link": "https://www.inaturalist.org/observations/1040000",
+    "seaslugforum_link": "http://www.seaslugforum.net/showall/calomili",
+    "worms_link": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=730437",
+    "wikipedia_link": ""
+  }
+]
+```
+
+If a link is not available, insert an empty string ("") as the value for that source. Each field must be present regardless of content availability. 
+
+The nudibranch must be the main subject (i.e., clear, centered, unobstructed). The photo should be of high resolution, suitable for analysis (preferably JPEG or PNG format).
+
+Avoid images with:
+
+- Obscured or partially out-of-frame subjects
+- Low lighting, blur, or compression artifacts
+- Always prefer species-level identification over genus-only results.
+- If multiple suitable images exist on a platform, pick the best available one (well-composed, visually diagnostic).
+- Include only direct photo pages or observation links, not category/search pages.
 
 ---
 
@@ -207,9 +224,7 @@ Please feel free to respond as a code critique, research recommendation, or meth
 
 ## Task Overview
 
-You are tasked with manually assigning each nudibranch image to **exactly one** of seven predefined **classification types** used in the *SeaSlugSpectra* project. These classification types describe the **visual structure of colour** and determine the appropriate method for palette extraction.
-
-Each classification type is documented in `palette_metadata.json`, and includes:
+You are tasked with manually assigning each nudibranch image to **exactly one** predefined **classification types**. These classification types describe the **visual structure of colour** and determine the appropriate method for palette extraction. Each classification type is documented in `palette_metadata.json`, and includes:
 
 - **`visual_signature`**: Describes the formal colour structure of the image
 - **`nudibranch_signature`**: Biological analogy based on pigmentation pattern
@@ -240,13 +255,15 @@ Each classification type is documented in `palette_metadata.json`, and includes:
 
 Use **only one** of the following **verbatim** values:
 
-- `Flat Synthetic`
-- `High Contrast, Segmented`
-- `Subtle Blending`
-- `Monochromatic Gradient`
-- `Symmetric Bimodal Gradient`
-- `Mid-complexity Naturalistic`
-- `Layered Chromatic Weave`
+```
+`Flat Synthetic`
+`High Contrast, Segmented`
+`Subtle Blending`
+`Monochromatic Gradient`
+`Symmetric Bimodal Gradient`
+`Mid-complexity Naturalistic`
+`Layered Chromatic Weave`
+```
 
 ---
 
@@ -268,19 +285,66 @@ Use **only one** of the following **verbatim** values:
 
 A complete metadata block with a filled classification might look like:
 
-`
+```json
 {
 "species_name": "Chromodoris willani",
 "image_filename": "Chromodoris_willani.jpg",
 ...
 "classification_type": "Flat Synthetic"
 }
-`
+```
+
+- Each image **must be assigned** one classification type.
+- Refer to `palette_metadata.json` as the source for definitions.
 
 ---
 
-## Important Notes
+# Nudibranch Metadata Completion
 
-- Each image **must be assigned** one classification type.
-- Refer to `palette_metadata.json` as the authoritative source for definitions.
+I am developing an R package called `SeaSlugSpectra` that generates biologically inspired colour palettes from images of nudibranch species.
 
+I have a list of species (scientific names in `Genus_species` format) and a corresponding `image_metadata.json` file that needs to be filled with biologically accurate metadata.
+
+Help complete the following metadata fields for each species. The JSON structure will be programmatically integrated into the library project. Please return the results in structured JSON format matching the schema below.
+
+## Output Format
+
+For each species, return a JSON object structured as the here example:
+
+```json
+  "Glaucus_atlanticus": {
+    "species_name": "Glaucus atlanticus",
+    "common_name": "Blue dragon, sea swallow, blue sea slug",
+    "image_filename": "Glaucus_atlanticus.jpg",
+    "location_distribution": "Pelagic zone (open ocean), carried by winds and currents; primarily tropical and subtropical areas. Documented sightings include Bay of Bengal, off Tamil Nadu and Andhra Pradesh in India. Populations are localized within distinct ocean basins.",
+    "depth": "Surface waters, typically floating on the ocean surface.",
+    "habitat": "Open ocean surface.",
+    "size_mm": "30",
+        "taxonomy": {
+        "order": "Nudibranchia",
+        "family": "Glaucidae"
+        },
+    "diet": "Cnidarians, including venomous siphonophores like the Portuguese man o' war. Uses a radula with serrated teeth, strong jaw, and denticles to grasp and chip prey.",
+    "interesting_facts": "Glaucus atlanticus is a pelagic sea slug that floats on the ocean surface, feeding on jellyfish and other cnidarians. It has a unique ability to store the stinging cells (nematocysts) of its prey in its own tissues",
+    "color_notes": "Ventral side (upwards) is dark and pale blue; true dorsal surface (downwards) is silvery grey. Features dark blue stripes on its head. Dorsal area of foot varies from dark blue to brown with a silver central position.",
+    "classification_type": "",
+    "pic_link": ""
+  }
+```
+
+You may consult credible sources such as Sea Slug Forum, WoRMS, iNaturalist, Wikipedia, Nudipixel, scientific papers, and nudibranch photo ID guides. If no data exists for a field, use `""`.
+
+---
+
+## Species Groups
+
+To support manageable lookup tasks, the species have been divided into groups like:
+
+```
+Caloria_militaris
+Chelidonura_mandroroa
+Goniobranchus_vibratus
+Goniobranchus_coi
+```
+
+Please ensure each JSON block includes all required fields, formatted for structured ingestion

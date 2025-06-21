@@ -791,5 +791,195 @@
     "color_notes": "Bluish-white body with two prominent continuous black longitudinal lines, a median continuous line, and a white mantle margin bordered by an orange line. Gills and rhinophores are bright orange and are retractible.",
     "classification_type": "",
     "pic_link": ""  
-  }
+  },
+  
+  "Caloria_militaris": {
+      "species_name": "Caloria militaris",
+      "common_name": "Military Caloria (Orange-lined Nudibranch)",
+      "image_filename": "Caloria_militaris.jpg",
+      "location_distribution": "Widely distributed in the Indo-West Pacific (from the Indian Ocean through Southeast Asia to the Western Pacific); also introduced to other regions (e.g. Eastern Pacific and Caribbean) as a fouling species.",
+      "depth": "Typically shallow subtidal, ~1–15 m",
+      "habitat": "Harbor fouling communities, coral reef rubble, often on hydroid colonies",
+      "size_mm": "22",
+      "taxonomy": {
+        "order": "Nudibranchia",
+        "family": "Facelinidae"
+      },
+      "diet": "Hydroids (e.g. the introduced hydroid *Pennaria* sp.)",
+      "interesting_facts": "Readily feeds on hydroids and may incorporate their stinging cells for defense. Sometimes blooms in harbors, suggesting it may disperse via shipping:contentReference[oaicite:8]{index=8}.",
+      "color_notes": "Translucent white body with black-brown cores in the cerata, which have white and blue-tinged tips and orange lines running up each ceras:contentReference[oaicite:9]{index=9}. Distinctive orange bands streak from the head tentacles to the foot corners, and the rhinophores bear cream tips with an orange medial band:contentReference[oaicite:10]{index=10}.",
+      "classification_type": "",
+      "pic_link": ""
+    },
+
+    "Chelidonura_mandroroa": {
+      "species_name": "Chelidonura mandroroa",
+      "common_name": "Mandroroa headshield slug",
+      "image_filename": "Chelidonura_mandroroa.jpg",
+      "location_distribution": "Indo-West Pacific tropics from East Africa (Kenya, Tanzania, Madagascar) to Japan and Indonesia:contentReference[oaicite:13]{index=13} (notably Madagascar, Kenya, Taiwan, Japan):contentReference[oaicite:14]{index=14}",
+      "depth": "Shallow reef flats, typically 8–13 m",
+      "habitat": "Under or on coral rubble in reef areas",
+      "size_mm": "35",
+      "taxonomy": {
+        "order": "Cephalaspidea",
+        "family": "Aglajidae"
+      },
+      "diet": "Feeds on flatworms (Turbellaria) in the sand/rubble substrate",
+      "interesting_facts": "The species name means “to hallucinate” in Malagasy, referring to its psychedelic color pattern:contentReference[oaicite:19]{index=19}. Its bright coloration is believed to be a warning (aposematic) display, as in many shell-less slugs:contentReference[oaicite:20]{index=20}:contentReference[oaicite:21]{index=21}.",
+      "color_notes": "Glossy black body with striking burnt-orange patches each bordered by bright yellow:contentReference[oaicite:23]{index=23}. The orange patches are irregular and stand out vividly against the dark body, giving a “psychedelic” appearance. The posterior shield has two short tails characteristic of headshield slugs.",
+      "classification_type": "",
+      "pic_link": ""
+    },
+
+    "Goniobranchus_vibratus": {
+      "species_name": "Goniobranchus vibratus",
+      "common_name": "Trembling nudibranch",
+      "image_filename": "Goniobranchus_vibratus.jpg",
+      "location_distribution": "Endemic to the Hawaiian Islands (type locality) with additional range in the central Pacific – recorded from the Marshall Islands, French Polynesia, and southern Japan:contentReference[oaicite:26]{index=26}:contentReference[oaicite:27]{index=27}.",
+      "depth": "Intertidal to ~24 m depth",
+      "habitat": "Rocky reef habitats; occasionally in tide pools and Halimeda algae beds",
+      "size_mm": "60",
+      "taxonomy": {
+        "order": "Nudibranchia",
+        "family": "Chromodorididae"
+      },
+      "diet": "Feeds on dark purple encrusting sponges, likely *Chelonaplysilla violacea*",
+      "interesting_facts": "Named “vibratus” for its habit of rhythmically vibrating its exposed gills while crawling. It lays a peach-colored egg ribbon with extra-capsular yolk masses that remain after hatching:contentReference[oaicite:33]{index=33}.",
+      "color_notes": "Brilliant yellow mantle covered in small raised white pustules, edged with scalloped bluish-purple trim. The seven gill plumes are white with dark purple edges, and the rhinophores are violet-tipped – a high-contrast aposematic pattern:contentReference[oaicite:35]{index=35}.",
+      "classification_type": "",
+      "pic_link": ""
+    },
+
+    "Goniobranchus_coi": {
+      "species_name": "Goniobranchus coi",
+      "common_name": "Co’s chromodoris (Co’s nudibranch)",
+      "image_filename": "Goniobranchus_coi.jpg",
+      "location_distribution": "Tropical Western Pacific – originally described from Vietnam and now known throughout the West Pacific (Indonesia, Philippines, Papua New Guinea, Micronesia) and northern Australia:contentReference[oaicite:37]{index=37}:contentReference[oaicite:38]{index=38}.",
+      "depth": "Typically 3–30 m on coral reefs",
+      "habitat": "Coral and rocky reefs; often observed on reef slopes and walls",
+      "size_mm": "50",
+      "taxonomy": {
+        "order": "Nudibranchia",
+        "family": "Chromodorididae"
+      },
+      "diet": "Feeds on purple encrusting sponges (e.g. *Chelonaplysilla* sp.)",
+      "interesting_facts": "When crawling, it rhythmically flaps its mantle edges up and down. *G. coi* is part of a species complex with an Indian Ocean counterpart (*G. gleniei*), differing mainly in color pattern:contentReference[oaicite:43]{index=43}.",
+      "color_notes": "Mantle background is dull brown with darker mottling, outlined centrally by a sinuous purple line. A thin purple line also traces the mantle margin. The underside of the anterior mantle is deep purple, and the mantle edge undulates (“flaps”) as the animal moves:contentReference[oaicite:45]{index=45}. The overall effect is a subdued palette with bold purple markings.",
+      "classification_type": "",
+      "pic_link": ""
+    },
+
+    "Tambja_sagamiana": {
+      "species_name": "Tambja sagamiana",
+      "common_name": "Sagamiana tambja (blue dragon nudibranch)",
+      "image_filename": "Tambja_sagamiana.jpg",
+      "location_distribution": "Western Pacific Ocean around Japan, Taiwan, and Korea; also recorded further south to coastal Australia (New South Wales):contentReference[oaicite:47]{index=47}.",
+      "depth": "Shallow subtidal reefs, typically 5–20 m",
+      "habitat": "Rocky and coral reefs, often near or under rubble where prey bryozoans grow",
+      "size_mm": "110",
+      "taxonomy": {
+        "order": "Nudibranchia",
+        "family": "Polyceridae"
+      },
+      "diet": "Feeds on bryozoans (moss animals) growing on reef substrate",
+      "interesting_facts": "A large species (up to 11 cm) known for its vivid warning colors. Like others in *Tambja*, it contains distasteful chemicals and shows active daytime foraging without hiding:contentReference[oaicite:51]{index=51}. Juveniles of related Tambja are sometimes mistaken for this species:contentReference[oaicite:52]{index=52}.",
+      "color_notes": "Deep blue-black body adorned with numerous rounded yellow-orange spots, each spot encircled by a thin black outline. The gill stalks are green and the rhinophores jet-black:contentReference[oaicite:54]{index=54}. The foot underside is bright yellow. This bold pattern of black with fiery orange spots is highly conspicuous (aposematic):contentReference[oaicite:55]{index=55}.",
+      "classification_type": "",
+      "pic_link": ""
+    },
+
+    "Hypselodoris_kaname": {
+      "species_name": "Hypselodoris kaname",
+      "common_name": "Kaname nudibranch",
+      "image_filename": "Hypselodoris_kaname.jpg",
+      "location_distribution": "Broad Indo-Pacific range – from Japan south through the Coral Sea to New Caledonia and northern New Zealand; also reported in the Western Indian Ocean (e.g. East Africa, Reunion):contentReference[oaicite:58]{index=58}.",
+      "depth": "Shallow reefs (recorded at 5–15 m) on coral slopes and walls",
+      "habitat": "Coral and rocky reefs in warm waters, often near sponge growth",
+      "size_mm": "50",
+      "taxonomy": {
+        "order": "Nudibranchia",
+        "family": "Chromodorididae"
+      },
+      "diet": "Feeds on yellow sponges of genus *Dysidea*:",
+      "interesting_facts": "*H. kaname* exhibits a vibrant pattern and was initially confused with similar species (*H. paulinae*) until described in 1994. It’s one of several chromodorids with bright red rhinophores and gills, which often indicate sponge-derived chemical defenses.",
+      "color_notes": "Creamy white mantle with longitudinal red lines and purplish spots on the dorsum. The mantle edge is trimmed in yellow-orange, and the rhinophores and branched gills are a vivid opaque red:contentReference[oaicite:62]{index=62}. This tricolor pattern (white, purple, and red) is very distinctive and high-contrast.",
+      "classification_type": "",
+      "pic_link": ""
+    },
+
+    "Hypselodoris_nigrostriata": {
+      "species_name": "Hypselodoris nigrostriata",
+      "common_name": "Black-striped hypselodoris",
+      "image_filename": "Hypselodoris_nigrostriata.jpg",
+      "location_distribution": "Western Indian Ocean – from the coasts of Tanzania and Mozambique to the Red Sea and Persian Gulf:contentReference[oaicite:64]{index=64}:contentReference[oaicite:65]{index=65}. Also extends into the Indo-West Pacific (records from Thailand, Indonesia, Papua New Guinea):contentReference[oaicite:66]{index=66}.",
+      "depth": "Subtidal reef zones (observed from ~5 m to 30 m)}",
+      "habitat": "Coastal coral reefs and reef flats in tropical waters",
+      "size_mm": "50",
+      "taxonomy": {
+        "order": "Nudibranchia",
+        "family": "Chromodorididae"
+      },
+      "diet": "Specialized on blue sponges in the family Dysideidae",
+      "interesting_facts": "Its name means “black-striped,” and indeed it displays bold yellow-and-black striping akin to wasp-like warning coloration. This species closely resembles the Pacific *H. zephyra*, with which it was historically confused:contentReference[oaicite:70]{index=70}.",
+      "color_notes": "Striking lemon-yellow body marked with numerous thin black longitudinal stripes (giving a pin-striped appearance). The rhinophores and branchial plumes are bright orange-red, creating a vivid contrast:contentReference[oaicite:72]{index=72}. Overall it presents a high-contrast aposematic pattern against predators.",
+      "classification_type": "",
+      "pic_link": ""
+    },
+
+    "Hypselodoris_krakatoa": {
+      "species_name": "Hypselodoris krakatoa",
+      "common_name": "Krakatoa hypselodoris (Volcano nudibranch)",
+      "image_filename": "Hypselodoris_krakatoa.jpg",
+      "location_distribution": "Western Pacific Ocean – known from southern Japan (Ryukyu/Ogasawara), Taiwan, the Philippines, Indonesia (e.g. Sulawesi) and Papua New Guinea:contentReference[oaicite:73]{index=73}:contentReference[oaicite:74]{index=74}.",
+      "depth": "Reef environments from about 3 m to 30 m depth",
+      "habitat": "Subtidal coral reefs and slopes, often among mixed coral and rubble",
+      "size_mm": "55",
+      "taxonomy": {
+        "order": "Nudibranchia",
+        "family": "Chromodorididae"
+      },
+      "diet": "Feeds on sponge colonies growing on reefs (likely dysideid sponges, as with related species)",
+      "interesting_facts": "Named after the volcano Krakatoa, likely alluding to its “fiery” gill coloration. It has been observed to have very prominent, frilly gills described as “pyrotechnic” by observers:contentReference[oaicite:76]{index=76}. This species was only described in 1999, highlighting the still-growing inventory of Indo-Pacific nudibranchs.",
+      "color_notes": "Complex pattern: the mantle is translucent pale brown with a broad, darker brown band encircling the margin. Scattered small opaque white spots may be present on the dorsum (forming a subtle reticulation over the brown background). The mantle border bears a fine vivid line, and the gills and rhinophores are brightly colored (often red-orange with white accents), giving a dramatic “flame-like” contrast.",
+      "classification_type": "",
+      "pic_link": ""
+    },
+
+    "Goniobranchus_leopardus": {
+      "species_name": "Goniobranchus leopardus",
+      "common_name": "Leopard chromodoris",
+      "image_filename": "Goniobranchus_leopardus.jpg",
+      "location_distribution": "Tropical Western Pacific – reported from Malaysia, Indonesia, the Philippines, Solomon Islands, and northwestern Australia:contentReference[oaicite:79]{index=79}. Occasional sightings as far south as central New South Wales, Australia:contentReference[oaicite:80]{index=80}.",
+      "depth": "Shallow coastal reefs, generally 3–25 m",
+      "habitat": "Coral reef slopes and lagoons, often on or near sponge-covered substrates",
+      "size_mm": "60",
+      "taxonomy": {
+        "order": "Nudibranchia",
+        "family": "Chromodorididae"
+      },
+      "diet": "Feeds on certain sponges (commonly dysideid sponges on coral reefs, similar to its relatives in the *“tryoni”* color group)",
+      "interesting_facts": "Part of the “*Hypselodoris tryoni* color group,” which includes similarly patterned species like *G. kuniei* and *H. tryoni*. *G. leopardus* gets its name from its leopard-like spots, which in some individuals form hollow square shapes on the mantle:contentReference[oaicite:83]{index=83}.",
+      "color_notes": "Mantle is brownish-tan with large dark purple-brown spots (“leopard” spots) each encircled by a thin white ring. The spots sit on a faint network of lighter brown. The mantle margin is white with a narrow, continuous outer line of bright purple to electric blue:contentReference[oaicite:86]{index=86}. Rhinophores are bluish-purple with white base, and the gills are whitish on the outside and golden on the inner face:contentReference[oaicite:87]{index=87}.",
+      "classification_type": "",
+      "pic_link": ""
+    },
+
+    "Goniobranchus_fidelis": {
+      "species_name": "Goniobranchus fidelis",
+      "common_name": "Faithful sea slug",
+      "image_filename": "Goniobranchus_fidelis.jpg",
+      "location_distribution": "Widespread Indo-West Pacific – from the Red Sea and Sri Lanka across to Japan, the Philippines, Papua New Guinea and northern Australia",
+      "depth": "Reef tops and upper slopes, intertidal to ~20 m",
+      "habitat": "Outer reef areas, often on dead coral or rubble in areas of sponge growth",
+      "size_mm": "25",
+      "taxonomy": {
+        "order": "Nudibranchia",
+        "family": "Chromodorididae"
+      },
+      "diet": "Sponges (feeds on certain toxic sponges, whose chemicals it sequesters for defense)",
+      "interesting_facts": "Commonly active by day, moving boldly in the open due to chemical defenses. Its name “fidelis” means faithful – earning it the nickname “faithful sea slug”:contentReference[oaicite:94]{index=94}. Glands in its tissues exude distasteful compounds, advertised by its bright coloration:contentReference[oaicite:95]{index=95}.",
+      "color_notes": "A creamy-white mantle center with scalloped inner edges, and a broad orange-red band around the entire mantle margin. A thin burgundy (wine-red) line runs along the inner edge of the orange border:contentReference[oaicite:97]{index=97}. The rhinophores and gills are translucent gray with lighter tips, relatively subdued compared to the vivid red-orange mantle border:contentReference[oaicite:98]{index=98}. This high-contrast orange/white/red pattern is very distinctive.",
+      "classification_type": "",
+      "pic_link": ""
+    }  
 }
