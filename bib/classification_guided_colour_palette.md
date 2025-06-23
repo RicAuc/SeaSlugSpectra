@@ -255,24 +255,29 @@ Help complete the following metadata fields for each species. The JSON structure
 For each species, return a JSON object structured as the here example:
 
 ```json
-  "Glaucus_atlanticus": {
-    "species_name": "Glaucus atlanticus",
-    "common_name": "Blue dragon, sea swallow, blue sea slug",
-    "image_filename": "Glaucus_atlanticus.jpg",
-    "location_distribution": "Pelagic zone (open ocean), carried by winds and currents; primarily tropical and subtropical areas. Documented sightings include Bay of Bengal, off Tamil Nadu and Andhra Pradesh in India. Populations are localized within distinct ocean basins.",
-    "depth": "Surface waters, typically floating on the ocean surface.",
-    "habitat": "Open ocean surface.",
-    "size_mm": "30",
-        "taxonomy": {
-        "order": "Nudibranchia",
-        "family": "Glaucidae"
-        },
-    "diet": "Cnidarians, including venomous siphonophores like the Portuguese man o' war. Uses a radula with serrated teeth, strong jaw, and denticles to grasp and chip prey.",
-    "interesting_facts": "Glaucus atlanticus is a pelagic sea slug that floats on the ocean surface, feeding on jellyfish and other cnidarians. It has a unique ability to store the stinging cells (nematocysts) of its prey in its own tissues",
-    "color_notes": "Ventral side (upwards) is dark and pale blue; true dorsal surface (downwards) is silvery grey. Features dark blue stripes on its head. Dorsal area of foot varies from dark blue to brown with a silver central position.",
-    "classification_type": "",
-    "pic_link": ""
-  }
+"Glaucus_atlanticus": {
+  "species_name": "Glaucus atlanticus",
+  "common_name": "Blue dragon, sea swallow, blue sea slug",
+  "image_filename": "Glaucus_atlanticus.jpg",
+  "location_distribution": "Pelagic zone (open ocean), carried by winds and currents; primarily tropical and subtropical areas. Documented sightings include Bay of Bengal, off Tamil Nadu and Andhra Pradesh in India. Populations are localized within distinct ocean basins.",
+  "depth": "Surface waters, typically floating on the ocean surface.",
+  "habitat": "Open ocean surface.",
+  "size_mm": "30",
+  "taxonomy": {
+    "order": "Nudibranchia",
+    "family": "Glaucidae"
+  },
+  "diet": "Cnidarians, including venomous siphonophores like the Portuguese man o' war. Uses a radula with serrated teeth, strong jaw, and denticles to grasp and chip prey.",
+  "interesting_facts": "Glaucus atlanticus is a pelagic sea slug that floats on the ocean surface, feeding on jellyfish and other cnidarians. It has a unique ability to store the stinging cells (nematocysts) of its prey in its own tissues.",
+  "color_notes": "Ventral side (upwards) is dark and pale blue; true dorsal surface (downwards) is silvery grey. Features dark blue stripes on its head. Dorsal area of foot varies from dark blue to brown with a silver central position.",
+  "classification_type": "",
+  "pic_location": "Nelson Bay, Australia",
+  "nudi_link": "https://nudipixel.net/species/glaucus_atlanticus",
+  "inaturalist_link": "https://www.inaturalist.org/taxa/50498-Glaucus-atlanticus",
+  "seaslugforum_link": "http://www.seaslugforum.net/factsheet/glauatla",
+  "worms_link": "https://www.marinespecies.org/aphia.php?p=taxdetails&id=181238",
+  "wikipedia_link": "https://en.wikipedia.org/wiki/Glaucus_atlanticus"
+}
 ```
 
 You may consult credible sources such as Sea Slug Forum, WoRMS, iNaturalist, Wikipedia, Nudipixel, scientific papers, and nudibranch photo ID guides. If no data exists for a field, use `""`.
@@ -280,20 +285,25 @@ You may consult credible sources such as Sea Slug Forum, WoRMS, iNaturalist, Wik
 ```json
 {
   "species_name": "Scientific name in 'Genus species' format",
-  "image_filename": "Filename of the corresponding image stored in 'images-raw/' (e.g., 'Glossodoris_atromarginata.jpg')",
   "common_name": "Recognised English name of the species (if available)",
-  "location": "Geographic collection locality (e.g., 'Raja Ampat, Indonesia', or 'Great Barrier Reef, Australia')",
-  "depth_m": "Approximate depth in metres where the specimen was observed (numeric or string if uncertain, e.g., 18 or '10–20')",
-  "habitat": "Brief description of the habitat where the specimen was encountered (e.g., 'coral reef slope', 'sandy lagoon', 'rubble patch')",
-  "size_mm": "Total body length of the individual in millimetres (estimated or measured; use an integer or range)",
+  "image_filename": "Filename of the corresponding image stored in 'images-raw/' (e.g., 'Glossodoris_atromarginata.jpg')",
+  "location_distribution": "Narrative description of the known geographic distribution (e.g., 'Widespread in the Indo-Pacific, including Philippines, Indonesia, and Great Barrier Reef')",
+  "depth": "Approximate depth of observation, in metres or descriptive terms (e.g., '0–20', 'shallow reef')",
+  "habitat": "Microhabitat or substrate association (e.g., 'coral rubble', 'seagrass beds', 'sandy slope')",
+  "size_mm": "Typical adult size in millimetres (integer or range, e.g., '25–40')",
   "taxonomy": {
-    "order": "Higher order classification (e.g., 'Nudibranchia')",
-    "family": "Taxonomic family (e.g., 'Chromodorididae')"
+    "order": "Higher taxonomic order (e.g., 'Nudibranchia')",
+    "family": "Family name (e.g., 'Chromodorididae')"
   },
-  "diet": "Description of known diet or feeding behaviour (e.g., 'feeds on sponges of the genus Dysidea')",
-  "interesting_facts": "Optional field highlighting behavioural, physiological, or ecological notes (e.g., 'produces distasteful mucus as a defense', or 'exhibits group foraging')",
-  "color_notes": "Observations on body colouration pattern and chromatic features (e.g., 'high-contrast blue and orange bands; likely aposematic')",
-  "classification_type": "One of the defined palette extraction classes: 'Flat Synthetic', 'High contrast, segmented', 'Subtle Blending', 'Monochromatic Gradient', 'Symmetric Bimodal Gradient', 'Mid-complexity Naturalistic', or 'Layered Chromatic Weave'",
-  "pic_link": "Optional URL linking to the image source or reference photo (can be used in visual documentation or public-facing datasets)"
+  "diet": "Known prey taxa or feeding strategy (e.g., 'Feeds on sponges of genus Dysidea', 'Consumes hydroids')",
+  "interesting_facts": "Optional: noteworthy biological traits (e.g., 'Capable of storing nematocysts from hydroids for defense')",
+  "color_notes": "Descriptive account of colour morphology and chromatic patterning relevant to palette design",
+  "classification_type": "Palette class used in SeaSlugSpectra: one of ['Flat Synthetic', 'High contrast, segmented', 'Subtle Blending', 'Monochromatic Gradient', 'Symmetric Bimodal Gradient', 'Mid-complexity Naturalistic', 'Layered Chromatic Weave']",
+  "pic_location": "Short caption or locality reference for the image (e.g., 'Tulamben, Bali', 'Nelson Bay, Australia')",
+  "nudi_link": "URL to species page or photo on nudipixel.net (if available)",
+  "inaturalist_link": "URL to species page or observation on iNaturalist (taxon or obs. level)",
+  "seaslugforum_link": "URL to Sea Slug Forum fact sheet (if applicable)",
+  "worms_link": "URL to WoRMS Aphia taxonomic record",
+  "wikipedia_link": "URL to species article on Wikipedia (if available)"
 }
 ```
