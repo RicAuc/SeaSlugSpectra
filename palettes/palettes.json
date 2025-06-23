@@ -1,3 +1,5 @@
 {
-  "Glaucus_atlanticus": ["#081D2C", "#397BA6", "#94CFF3", "#C4E9F9", "#FFFFFF"],
+  "species": "Chromodoris annae",
+  "classification_type": "High Contrast, Segmented",
+  "colors": ["#1A2B3C", "#456789"]
 }
