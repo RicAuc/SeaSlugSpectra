@@ -3,13 +3,16 @@ import os
 import json
 from PIL import Image
 
+# --- CONFIGURATION (resolved relative to script location) ---
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # Path to src/
+
 # --- CONFIGURATION ---
-METADATA_FILE = "data-raw/image_metadata.json"  # Path to your JSON metadata
-IMAGES_DIR = "images-raw/preprocessed"          # Directory containing .jpg files
+METADATA_FILE = os.path.join(BASE_DIR, "..", "data-raw", "image_metadata.json")
+IMAGES_DIR = os.path.join(BASE_DIR, "..", "images-raw", "preprocessed")
 
 # --- REQUIRED FIELDS (update if schema changes) ---
 REQUIRED_FIELDS = [
-    "species_name", "common_name", "image_filename", "location", "depth",
+    "species_name", "common_name", "image_filename", "location", "depth_m",
     "habitat", "size_mm", "taxonomy", "diet", "interesting_facts", "color_notes",
     "classification_type", "pic_location", "nudi_link", "inaturalist_link",
     "seaslugforum_link", "worms_link", "wikipedia_link"
@@ -73,4 +76,4 @@ def validate_metadata_and_images():
 if __name__ == "__main__":
     validate_metadata_and_images()
 
-# python validate_metadata_and_images.py
+# python src/validate_metadata_and_images.py
