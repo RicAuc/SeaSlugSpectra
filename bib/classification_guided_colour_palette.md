@@ -78,7 +78,59 @@ To operationalise this system, the following techniques are employed or proposed
 
 ---
 
-# Request for Expert Review: Colour Palette Extraction Strategies in SeaSlugSpectra
+# Image Classification
+
+The task is to be performed by a visual assistant during image classification.
+
+## Objective
+
+Classify the **visual colour structure** of a segmented image into one of seven predefined **palette classification types**. The classification is based solely on formal visual attributes (such as segmentation, blending, gradients, symmetry, layering, and tonal structure).
+
+This process can apply to **any visually structured object**, including artworks or biological specimens.
+
+## Instructions to the Assistant
+
+Your task is to classify the **colour organisation** of a segmented image (with transparent background and a single subject) into one of the following categories of permitted `classification_type` values:
+
+1. `Flat Synthetic`
+2. `High Contrast, Segmented`
+3. `Subtle Blending`
+4. `Monochromatic Gradient`
+5. `Symmetric Bimodal Gradient`
+6. `Mid-complexity Naturalistic`
+7. `Layered Chromatic Weave`
+
+Selecting **exactly one** classification type per image. Do **not** refer to the biological identity or semantics of the image. Base your judgment purely on visual structure.
+
+## Visual Criteria
+
+Consider the following when assigning the classification:
+
+* Number of hues present
+* Whether colours are **sharply bounded** or **smoothly blended**
+* Presence of **symmetry**, **gradient transitions**, or **repeated colour textures**
+* Tonal uniformity vs. local complexity
+* Whether the colour appears to be **layered**, **segmented**, or **ambient**
+
+---
+
+## Response Format
+
+Respond in the following JSON format:
+
+```json
+{
+  "image_filename": "<filename>.png",
+  "classification_type": "<Exact match from list above>",
+  "justification": "Brief explanation based on visual structure and patterning."
+}
+```
+
+NB: If the image quality is poor or ambiguous, you may request clarification and exploit web research looking for addtional picture of the same species; process one image at a time.
+
+---
+
+# Colour Palette Extraction Strategies in SeaSlugSpectra
 
 ## Project Context
 
@@ -208,8 +260,6 @@ Use **only one** of the following **verbatim** values:
 `Layered Chromatic Weave`
 ```
 
----
-
 ## Classification Guidelines
 
 | Type                         | Visual Clues |
@@ -307,3 +357,5 @@ You may consult credible sources such as Sea Slug Forum, WoRMS, iNaturalist, Wik
   "wikipedia_link": "URL to species article on Wikipedia (if available)"
 }
 ```
+
+---
