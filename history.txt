@@ -1,0 +1,37 @@
+I am working on a project called SeaSlugSpectra, whose aim is to use generative models for colour-category inference from images of highly colourful animals, namely nudibranchs. The ultimate goal is that, given an image of one of these organisms, for example from /Users/riccardo/Repositories/SeaSlugSpectra/images-raw/preprocessed, the system will generate metadata such as:
+
+{
+  "species": "Chromodoris annae",
+  "classification_type": "High Contrast, Segmented",
+  "colors": ["#1A2B3C", "#456789", "..."]
+}
+
+From this, R functions analogous to the original MoMAColors ones should be created, for example:
+
+## Functions
+You can retrieve palettes using various methods listed below.
+
+moma.colors("vonHeyl")
+
+moma.colors("Liu", n = 6, type = "discrete")
+
+moma.colors("Clay", 5)
+
+moma.colors("Ernst", n = 100, type = "continuous")
+
+Please refer to the MoMAColors Git repository for further details: /Users/riccardo/Repositories/MoMAColors.
+
+I would also like a portfolio or panel for each input image, with the original image shown on the left and a visualisation of the corresponding palette on the right, together with the species name, similar to the examples collected for MoMAColors in: /Users/riccardo/Repositories/SeaSlugSpectra/data-raw/MOMAexamples.
+
+A particularly important file is palette_metadata.json at /Users/riccardo/Repositories/SeaSlugSpectra/data-raw/palette_metadata.json. At present, one version has already been created for all sea slug species in the image repository, but this file should be updated whenever new images are added to the catalogue. This task should also be based on generative modelling.
+
+Additional useful information can be retrieved from:
+	•	README.md
+	•	foreground_segmentation.md
+	•	classification_guided_colour_palette.md
+
+With regard to the generative modelling framework, you may propose a Python-based approach in which models such as nemotron-mini or Qwen are used. I am still unsure which model would be most appropriate. Nemotron may be too small to generate the metadata files reliably, whereas Qwen may be more capable. However, Qwen is also computationally expensive, so, if possible, I would prefer to avoid it. I have already configured the local environment to use such models via Python libraries. You can find further details in /Users/riccardo/Repositories/deamon-v1. Importantly, do not use the deamon-v1 repository directly, but you may draw inspiration from its internal approach to model management.
+
+What I would like you to do is complete the SeaSlugSpectra project. Many features and much of the overall library structure have already been developed, but they are not yet harmonised or fully finalised. The aim is essentially to create a clone of MoMAColors, but with an additional generative modelling layer so that, given images from preprocessed, or new images, the system can generate both the metadata and the new palette.
+
+Please let me know whether everything is clear.
