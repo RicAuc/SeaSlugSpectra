@@ -1,0 +1,81 @@
+MoMAColors GitHub Repository: Content and Structure Overview
+------------------------------------------------------------
+
+Repository Name: MoMAColors
+Author: Blake R. Mills
+URL: https://github.com/BlakeRMills/MoMAColors
+
+Directory Structure:
+
+MoMAColors/
+├── PackageImages/
+│   └── *.png
+│       - Image previews of each color palette
+│       - Used in README and for visual documentation
+│
+├── R/
+│   ├── palette_functions.R
+│       - Defines core functions such as:
+│         * moma.colors(): Retrieve color palettes
+│         * display.all.moma(): Visualize all palettes
+│         * colorblind.friendly.moma(): Check accessibility
+│         * test.plots.moma(): Preview palettes with test plots
+│
+│   ├── ggplot2_scales.R
+│       - Provides ggplot2-compatible scale functions:
+│         * scale_fill_moma_d(), scale_color_moma_d()
+│         * scale_fill_moma_c(), scale_color_moma_c()
+│
+│   └── utils.R
+│       - Helper functions supporting the main features
+│
+├── man/
+│   └── *.Rd
+│       - Roxygen2-generated documentation files for package functions
+│
+├── .gitignore
+│   - Standard Git ignore file for R projects
+│
+├── .Rbuildignore
+│   - Specifies files to exclude from R build process
+│
+├── DESCRIPTION
+│   - Metadata for the R package:
+│     * Title, version, authors, dependencies, etc.
+│
+├── NAMESPACE
+│   - Declares exported functions and imported packages
+│
+├── README.md
+│   - Contains:
+│     * Project overview
+│     * Installation instructions via devtools::install_github()
+│     * Palette examples and usage
+│     * Colorblind accessibility notes
+│
+├── LICENSE / LICENSE.md
+│   - MIT License declaration
+│
+└── MoMAColors.Rproj
+    - RStudio project configuration file
+
+Functional Summary:
+
+- Total Palettes: 35+ qualitative palettes
+- Each palette is named after an artist or artwork (e.g., VanGogh, Picasso)
+
+Key Functions:
+- moma.colors(name, n, type = "discrete")
+- display.all.moma(n = 5, colorblind_only = FALSE)
+- colorblind.friendly.moma("VanGogh")
+- test.plots.moma("Picasso", plot.type = "bar")
+- ggplot2 support via scale_*_moma_* functions
+
+Dependencies:
+- Uses colorblindcheck, roxygen2, ggplot2
+- Inspired by packages like MetBrewer, wesanderson, and PNWColors
+
+Purpose:
+- To provide aesthetically curated color palettes derived from MoMA artworks
+- Aimed at improving data visualization with artistic, accessible color design
+
